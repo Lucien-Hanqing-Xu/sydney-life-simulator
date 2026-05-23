@@ -1,0 +1,599 @@
+{
+  "character": "ruth",
+  "bgm": "ruth_play.mp3",
+  "scenes": [
+    {
+      "id": "ch1a_kitchen",
+      "title": "第一章 · 异乡的厨房",
+      "image": "ruth_ch1a.png",
+      "narrative": "Linh来悉尼六个月了。丈夫Minh在UNSW读土木工程博士，早上七点出门，晚上十点回来。女儿Mei在上小学，正在适应澳洲的课堂。\n\n而Linh找到了一间Marrickville Road上的空铺面——租金不便宜，但位置好，附近有越南社区，人流量大。她闭上眼睛就能闻到那碗pho的味道。在胡志明市她就摆过pho摊，那是她最会做的事情。\n\n但积蓄有限。开店意味着全押上去。Minh说：“我们冒不起这个险。” 他的语气里有担心，也有一丝不以为然。",
+      "choices": [
+        {
+          "id": "ch1a_allin",
+          "text": "全部身家投进去，开店 —— 这是她的梦，风险再大也要试",
+          "effects": {
+            "money": -3,
+            "skill": 1,
+            "mood": 2
+          },
+          "add_flags": [
+            "opened_immediately"
+          ],
+          "text_en": "Put everything in, open the shop — it's her dream, worth any risk"
+        },
+        {
+          "id": "ch1a_save",
+          "text": "先打工攒钱，稳一点 —— 去别的餐馆做厨工，攒够了再说",
+          "effects": {
+            "money": 1,
+            "mood": -1
+          },
+          "add_flags": [
+            "saved_first"
+          ],
+          "text_en": "Work and save first, play it safe — kitchen-hand at another restaurant until she's got enough"
+        },
+        {
+          "id": "ch1a_minh",
+          "text": "和Minh再商量 —— 他不同意，但她还是开了，这埋下了什么",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "marriage_tension_1"
+          ],
+          "text_en": "Talk it over with Minh again — he disagrees, but she opens anyway; it plants something"
+        }
+      ],
+      "title_en": "Chapter 1 · A Kitchen Far From Home",
+      "narrative_en": "Linh has been in Sydney six months. Her husband Minh is doing a civil engineering PhD at UNSW — out at seven, back at ten. Their daughter Mei is in primary school, adjusting to Australian classrooms.\n\nAnd Linh has found an empty shopfront on Marrickville Road — rent isn't cheap, but the location's good, there's a Vietnamese community nearby, foot traffic. Close her eyes and she can smell that bowl of pho. She ran a pho stall in Ho Chi Minh City; it's the thing she does best.\n\nBut savings are limited. Opening means putting it all in. Minh says, “We can't afford this risk.” There's worry in his voice — and a trace of dismissal."
+    },
+    {
+      "id": "ch1b_setup",
+      "title": "第一章 · 张罗",
+      "image": "ruth_ch1b.png",
+      "narrative": "开一家店，远不只是一个梦。Marrickville Road的租约、装修、二手厨房设备、NSW食品安全注册、找供应商——越南香草、河粉、熬汤的牛骨。每一样都要钱，都要跑。\n\n钱很紧。她盘算着几条路：掏空积蓄、再跟越南老家借一点，全资自己扛；或者和Marrickville的越南社区合伙，分摊成本、共用资源；又或者一切从简，二手设备、最低成本先开起来。\n\n这是她第一次，要把一个梦变成一张张发票和一份份执照。",
+      "choices": [
+        {
+          "id": "ch1b_sole",
+          "text": "掏空积蓄+跟老家借，自己全资扛 —— 是我的店，就得是我的",
+          "effects": {
+            "money": -1,
+            "mood": -1
+          },
+          "add_flags": [
+            "sole_owner"
+          ],
+          "text_en": "Drain savings, borrow from home, fully self-fund — if it's her shop, it has to be hers"
+        },
+        {
+          "id": "ch1b_community",
+          "text": "和越南社区合伙，共担成本 —— 多一份资源，也多一份人情",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "community_partner"
+          ],
+          "text_en": "Partner with the Vietnamese community, share the cost — more resources, more obligation too"
+        },
+        {
+          "id": "ch1b_lean",
+          "text": "一切从简，二手设备、最小成本起步 —— 先活下来再说",
+          "effects": {
+            "money": 1,
+            "skill": 1,
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Keep it bare-bones, secondhand gear, lowest start — just survive first"
+        }
+      ],
+      "title_en": "Chapter 1 · Setting Up",
+      "narrative_en": "Opening a shop is far more than a dream. The lease on Marrickville Road, the fit-out, secondhand kitchen gear, NSW food-safety registration, finding suppliers — Vietnamese herbs, rice noodles, beef bones for the broth. Everything costs money, and legwork.\n\nMoney's tight. She weighs the roads: drain her savings and borrow a little from family back home, fully self-funded; or partner with the Marrickville Vietnamese community to share costs and resources; or keep it bare-bones, secondhand gear, lowest possible start.\n\nIt's the first time she has to turn a dream into a stack of invoices and licences."
+    },
+    {
+      "id": "ch1c_family",
+      "title": "第一章 · 家",
+      "image": "ruth_ch1c.png",
+      "narrative": "站在这个门槛上，家里的天平也在晃。\n\nMinh被博士论文压得喘不过气，他不懂她为什么非要冒这个险——“我们够用了。” Mei倒是兴奋，妈妈要有自己的店了，奶声奶气地问：“我能帮忙吗？”\n\nLinh心里清楚一件她不愿细想的事：她是跟着Minh的学生签来的陪读家属签——她在这个国家的全部身份，都系在Minh身上。可这碗pho，是她的。",
+      "choices": [
+        {
+          "id": "ch1c_talk",
+          "text": "跟Minh坦诚沟通，争取他的理解 —— 她不想把他推远",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [
+            "talked_minh"
+          ],
+          "text_en": "Talk it through honestly with Minh, win his understanding — she doesn't want to push him away"
+        },
+        {
+          "id": "ch1c_act",
+          "text": "先斩后奏，做了再说 —— 解释太累，不如做出来给他看",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "marriage_tension_1"
+          ],
+          "text_en": "Act first, explain later — explaining is exhausting; better to just show him"
+        },
+        {
+          "id": "ch1c_mei",
+          "text": "把Mei拉进来，让女儿成为帮手和盟友 —— 也让她看看妈妈的样子",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "mei_ally"
+          ],
+          "text_en": "Bring Mei in, make her daughter a helper and ally — let her see who Mum is"
+        }
+      ],
+      "title_en": "Chapter 1 · Family",
+      "narrative_en": "On this threshold, the balance at home wobbles too.\n\nMinh, crushed by his thesis, doesn't get why she has to take this risk — “we have enough.” Mei, on the other hand, is thrilled Mum will have her own shop, and asks in a small voice, “Can I help?”\n\nLinh knows one thing she'd rather not dwell on: she came on a dependent visa attached to Minh's student visa — her whole status in this country is tied to him. But this bowl of pho is hers."
+    },
+    {
+      "id": "ch2a_opening",
+      "title": "第二章 · 开张",
+      "image": "ruth_ch2a.png",
+      "narrative": "不管是马上开还是攒了几个月，“Pho Linh”终于在Marrickville开张了。头几周是混乱的——澳洲食品安全检查员拿着checklist一项项查，供应商要用蹩脚的英语谈价格，卫生官员面无表情。但pho是正宗的，本地人开始来了。\n\n周一到周六，Linh站在厨房里。Mei放学后坐在角落写作业。Minh偶尔来帮忙收盘子，但大部分时间在实验室。",
+      "choices": [
+        {
+          "id": "ch2a_solo",
+          "text": "什么都自己来，省钱 —— 买菜、煮汤、端盘、算账，一天16个小时",
+          "effects": {
+            "money": 1,
+            "skill": 2,
+            "mood": -2
+          },
+          "add_flags": [
+            "burnout_risk"
+          ],
+          "text_en": "Do it all herself, save money — shopping, broth, serving, books, sixteen hours a day"
+        },
+        {
+          "id": "ch2a_hire",
+          "text": "请帮手，投入品质 —— 雇一个本地part-timer，花钱但有喘息空间",
+          "effects": {
+            "money": -2,
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Hire help, invest in quality — a local part-timer, costs money but gives her room to breathe"
+        },
+        {
+          "id": "ch2a_community",
+          "text": "和越南社区合作 —— 附近越南家庭出资源，她出手艺和劳力",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "community_partner"
+          ],
+          "text_en": "Work with the Vietnamese community — a nearby family provides resources, she provides the craft and labour"
+        }
+      ],
+      "title_en": "Chapter 2 · Opening Day",
+      "narrative_en": "Whether she opened straight away or saved for months first, “Pho Linh” finally opens in Marrickville. The first weeks are chaos — food-safety inspectors working down a checklist, suppliers haggling in broken English, health officers with blank faces. But the pho is authentic, and the locals start coming.\n\nMonday to Saturday, Linh stands in the kitchen. Mei does homework in the corner after school. Minh helps clear plates now and then, but mostly he's in the lab."
+    },
+    {
+      "id": "ch2b_grind",
+      "title": "第二章 · 灶台",
+      "image": "ruth_ch2b.png",
+      "narrative": "凌晨四点去市场抢最新鲜的香草和牛骨，回来吊汤、备料；午市、晚市的高峰；收档、洗刷；半夜对着账本。她的手上一年四季是八角和青柠的味道。\n\nMei趴在角落的桌子上写作业，有时写着写着就睡着了。Linh给她盖上自己的外套，回头继续翻炒。\n\n一个甜蜜的烦恼来了：客人比她一个人能应付的多。她得想想，怎么把这家店往前推一步。",
+      "choices": [
+        {
+          "id": "ch2b_endure",
+          "text": "咬牙独自硬撑，省下每一分 —— 累垮也要把钱攒住",
+          "effects": {
+            "money": 1,
+            "mood": -2
+          },
+          "add_flags": [
+            "burnout_risk"
+          ],
+          "text_en": "Grit it out alone, save every cent — even if it breaks her"
+        },
+        {
+          "id": "ch2b_parttimer",
+          "text": "雇个本地part-timer，喘口气 —— 也顺便练练英语和管理",
+          "effects": {
+            "money": -1,
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Hire a local part-timer, breathe — and practise her English and managing while she's at it"
+        },
+        {
+          "id": "ch2b_signature",
+          "text": "优化出餐流程、打磨招牌菜 —— 把手艺做成护城河",
+          "effects": {
+            "skill": 2,
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Streamline service, perfect a signature dish — turn craft into a moat"
+        }
+      ],
+      "title_en": "Chapter 2 · The Stove",
+      "narrative_en": "Four a.m. to the market for the freshest herbs and bones, back to draw the broth and prep; the lunch and dinner peaks; close, scrub down; the books at midnight. Year-round her hands smell of star anise and lime.\n\nMei does homework at the corner table, sometimes falling asleep there. Linh drapes her own jacket over her and turns back to the wok.\n\nA sweet problem arrives: more customers than she can handle alone. She has to think about how to push the place one step forward."
+    },
+    {
+      "id": "ch2c_traction",
+      "title": "第二章 · 口碑",
+      "image": "ruth_ch2c.png",
+      "narrative": "口口相传，店火了一点。周五晚上开始排队。熟客记得她的名字，记得自己那碗要加辣、不要葱。\n\n但代价写在家里：她已经好几周没和Minh、Mei一起吃过晚饭；一坐下就睡着；Minh那句“恭喜”里，带着一点她听得出的别扭。\n\n一点小小的胜利，笼着一层她正在失去的东西。",
+      "choices": [
+        {
+          "id": "ch2c_expand",
+          "text": "乘势扩大，加桌、延长营业 —— 趁热打铁",
+          "effects": {
+            "money": 1,
+            "skill": 1,
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Ride the momentum, add tables, extend hours — strike while it's hot"
+        },
+        {
+          "id": "ch2c_family",
+          "text": "守住现状，留点力气给家人 —— 钱赚不完，女儿会长大",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [
+            "family_priority"
+          ],
+          "text_en": "Hold steady, keep some energy for family — money's endless, a daughter grows up"
+        },
+        {
+          "id": "ch2c_reinvest",
+          "text": "把利润再投回店里，做长远 —— 设备、装修、招牌，一步步来",
+          "effects": {
+            "money": -1,
+            "skill": 1
+          },
+          "add_flags": [],
+          "text_en": "Plough the profit back in for the long run — equipment, fit-out, a sign, step by step"
+        }
+      ],
+      "title_en": "Chapter 2 · Word of Mouth",
+      "narrative_en": "Word spreads; the place catches a little fire. Fridays start to queue. Regulars know her name, know their own bowl — extra chilli, no spring onion.\n\nBut the cost is written at home: weeks now without a dinner with Minh and Mei; she falls asleep the moment she sits; in Minh's “congratulations” there's an edge she can hear.\n\nA small victory, shadowed by what she's losing."
+    },
+    {
+      "id": "ch3a_cracks",
+      "title": "第三章 · 裂痕",
+      "image": "ruth_ch3a.png",
+      "narrative": "餐厅开了八个月。有熟客了，一个美食博主给了四星。但家里的裂痕在扩大。\n\nMinh越来越忙——博士论文的压力把他压得喘不过气，他开始对Linh的餐厅带着一种微妙的怨气：“你开那个店到底为了什么？” 其实他是在问：为什么你有了自己的东西，而我还在苦熬？\n\nMei有一天在晚饭时问：“为什么爸爸妈妈不一起吃饭了？”\n\nLinh夹在她正在建造的东西和她签证所依附的那个人之间。",
+      "choices": [
+        {
+          "id": "ch3a_confront",
+          "text": "和Minh摊牌 —— “你得看到我在做的事是有意义的”",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [
+            "confronted_minh"
+          ],
+          "text_en": "Have it out with Minh — “you have to see that what I'm doing matters”"
+        },
+        {
+          "id": "ch3a_focus",
+          "text": "专心经营，不管他了 —— 把精力全倒进餐厅，婚姻自生自灭",
+          "effects": {
+            "skill": 2,
+            "mood": -1
+          },
+          "add_flags": [
+            "marriage_tension_2"
+          ],
+          "text_en": "Pour herself into the restaurant, leave him be — let the marriage fend for itself"
+        },
+        {
+          "id": "ch3a_family",
+          "text": "周日关店，留给家庭 —— 在家做饭，陪Mei，和Minh好好说说话",
+          "effects": {
+            "money": -1,
+            "mood": 1
+          },
+          "requirement": {
+            "mood": 5
+          },
+          "add_flags": [
+            "family_priority"
+          ],
+          "text_en": "Close Sundays for family — cook at home, be with Mei, really talk to Minh"
+        }
+      ],
+      "title_en": "Chapter 3 · Cracks",
+      "narrative_en": "The restaurant's been open eight months. There are regulars; a food blogger gave it four stars. But the cracks at home are widening.\n\nMinh is busier and busier — the thesis is crushing him — and he's begun to carry a subtle resentment toward Linh's restaurant: “What's the point of that shop of yours?” What he's really asking is: why do you have your own thing, while I'm still grinding?\n\nOne night at dinner Mei asks, “Why don't Mum and Dad eat together anymore?”\n\nLinh is caught between the thing she's building and the man her visa depends on."
+    },
+    {
+      "id": "ch3b_imbalance",
+      "title": "第三章 · 那句话",
+      "image": "ruth_ch3b.png",
+      "narrative": "一次争执里，Minh说出了那句话——也许不是恶意，但它落了地：“你别忘了，你是跟着我的学生签来的。”\n\n不管他是当作事实，还是当作武器，有什么东西变了。Linh第一次如此清楚地意识到：她的陪读家属签绑在Minh的学生签上，自己能不能留在这里，攥在他手里。\n\n那天收档后，她站在空荡荡的店里，看着自己一手建起来的一切，又想起护照上那张家属签证——签发依据那一栏，写着Minh的名字。",
+      "choices": [
+        {
+          "id": "ch3b_research",
+          "text": "第一次去查：我能不能有自己的签证？ —— 厨师、经营资质，有没有路",
+          "effects": {
+            "skill": 1,
+            "visa": 1
+          },
+          "add_flags": [
+            "explore_own_visa"
+          ],
+          "text_en": "For the first time, look into it: can I have my own visa? — chef, business credentials, is there a path"
+        },
+        {
+          "id": "ch3b_swallow",
+          "text": "忍下这句话，把气都倒进熬汤里 —— 她比谁都能熬",
+          "effects": {
+            "skill": 1,
+            "mood": -2
+          },
+          "add_flags": [],
+          "text_en": "Swallow the words, pour it all into the broth — no one can out-simmer her"
+        },
+        {
+          "id": "ch3b_fight",
+          "text": "跟Minh大吵一架 —— 这句话她咽不下去",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "marriage_tension_2"
+          ],
+          "text_en": "Have a furious row with Minh — she can't swallow that one"
+        }
+      ],
+      "title_en": "Chapter 3 · Those Words",
+      "narrative_en": "In an argument, Minh says it — maybe not cruelly, but it lands: “Don't forget, you're here on my student visa.”\n\nWhether he meant it as a fact or a weapon, something changes. For the first time Linh sees it fully: her dependent visa is attached to his student visa; whether she gets to stay is held in his hands.\n\nAfter close that night, she stands in the empty restaurant, looking at everything she built with her own hands — and thinks of the dependent visa in her passport, the line for “basis of grant” bearing Minh's name."
+    },
+    {
+      "id": "ch3c_mei",
+      "title": "第三章 · 女儿",
+      "image": "ruth_ch3c.png",
+      "narrative": "Mei在澳洲慢慢扎下根：说英语带了澳洲口音，说越南语带着妈妈的口音。她安静地看着这个家。\n\n一天晚上，Mei看着Linh收档，忽然说：“妈妈，我长大了也要有自己的店。” Linh的手停在半空。\n\n她忽然明白，自己正在给女儿示范一个什么样的女人——一个放弃了的，还是一个建起了什么的。这个念头，比任何账单都重。",
+      "choices": [
+        {
+          "id": "ch3c_teach",
+          "text": "告诉Mei：女人要有自己的东西 —— 把这句话，刻进女儿心里",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "mei_ally"
+          ],
+          "text_en": "Tell Mei: a woman should have something of her own — carve it into her daughter"
+        },
+        {
+          "id": "ch3c_guilt",
+          "text": "为了Mei，开始考虑要不要妥协 —— 也许稳定比梦想重要",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "leaning_follow"
+          ],
+          "text_en": "For Mei's sake, start thinking about compromise — maybe stability matters more than the dream"
+        },
+        {
+          "id": "ch3c_fuel",
+          "text": "把对Mei的愧疚，化成做下去的动力 —— 她要让女儿以她为荣",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Turn the guilt toward Mei into fuel to keep going — she'll make her daughter proud"
+        }
+      ],
+      "title_en": "Chapter 3 · Daughter",
+      "narrative_en": "Mei is slowly putting down roots in Australia: English with an Aussie accent, Vietnamese with her mother's. She watches this family quietly.\n\nOne night, watching Linh close up, Mei suddenly says, “Mum, when I grow up I want my own shop too.” Linh's hand stops in mid-air.\n\nShe understands, all at once, what kind of woman she's modelling for her daughter — one who gave up, or one who built something. The thought weighs more than any bill."
+    },
+    {
+      "id": "ch4a_chain",
+      "title": "第四章 · 签证的锁链",
+      "image": "ruth_ch4a.png",
+      "bgm": "mood_hollow.mp3",
+      "narrative": "Minh的博士读完了。他拿到了一个博士后offer——在布里斯班。或者他想回越南。不管哪种，他要离开悉尼。\n\nLinh的陪读家属签绑在Minh的学生签上——他的签证一结束，她的也跟着作废。餐厅刚刚开始盈利。她建造的一切都在这里。\n\nMinh说：“跟我走吧。” 他说这话的时候，没看她的眼睛。",
+      "choices": [
+        {
+          "id": "ch4a_refuse",
+          "text": "我不能就这么放弃我建的一切 —— 这家店是她的命根",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [
+            "wont_give_up"
+          ],
+          "text_en": "She can't just give up everything she built — this shop is her lifeblood"
+        },
+        {
+          "id": "ch4a_lean",
+          "text": "也许家庭比生意重要 —— 她累了，也怕了",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "leaning_follow"
+          ],
+          "text_en": "Maybe family matters more than the business — she's tired, and afraid"
+        },
+        {
+          "id": "ch4a_explore",
+          "text": "先冷静，研究所有可能的出路 —— 哭解决不了问题",
+          "effects": {
+            "skill": 1
+          },
+          "add_flags": [
+            "exploring"
+          ],
+          "text_en": "Stay calm, research every possible way out — crying solves nothing"
+        }
+      ],
+      "title_en": "Chapter 4 · The Visa Chain",
+      "narrative_en": "Minh has finished his PhD. He's got a postdoc offer — in Brisbane. Or he wants to go back to Vietnam. Either way, he's leaving Sydney.\n\nLinh's dependent visa is attached to Minh's student visa — once his ends, hers lapses too. The restaurant has only just turned a profit. Everything she built is here.\n\nMinh says, “Come with me.” He doesn't look her in the eye when he says it."
+    },
+    {
+      "id": "ch4b_options",
+      "title": "第四章 · 出路",
+      "image": "ruth_ch4b.png",
+      "narrative": "她去做了功课。一个移民中介把话说清楚了：自己独资的店，没法给自己担保签证——澳洲不认“老板担保自己”这一套。但她有别的路：以厨师（Chef）的身份做TRA技能评估、考雅思，凑分走州担保技术移民；或者把店做成和越南社区合伙的公司，由公司（有真正的合伙人）出面担保她做厨师；再不然，被别的餐厅雇主担保。\n\n每条路都要技能评估、英语和一摞材料，而且都不保证成功。\n\n说服Minh留下是另一条路，可他的事业已经定在布里斯班。离婚则意味着彻底失去陪读家属签，赌上自己一个人的申请。而Mei，需要稳定。\n\n每一条路，都要她拿点什么去换。",
+      "choices": [
+        {
+          "id": "ch4b_build",
+          "text": "做厨师技能评估、考雅思，走技术移民或公司担保 —— 把命运拿回自己手里",
+          "effects": {
+            "skill": 2,
+            "visa": 1
+          },
+          "requirement": {
+            "skill": 5
+          },
+          "add_flags": [
+            "building_own_visa"
+          ],
+          "text_en": "Prep the chef skills assessment and IELTS — go skilled migration or company sponsorship; take fate back into her own hands"
+        },
+        {
+          "id": "ch4b_persuade",
+          "text": "最后一次努力说服Minh留下 —— 为这个家，也为她自己",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "negotiated"
+          ],
+          "text_en": "One last try to persuade Minh to stay — for the family, and for herself"
+        },
+        {
+          "id": "ch4b_mei",
+          "text": "为了Mei的稳定，倾向跟着走 —— 母亲先于自己",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "leaning_follow"
+          ],
+          "text_en": "For Mei's stability, lean toward going with him — mother before self"
+        }
+      ],
+      "title_en": "Chapter 4 · A Way Out",
+      "narrative_en": "She does the homework. A migration agent makes it plain: a shop you own outright can't sponsor your own visa — Australia doesn't recognise “the boss sponsoring herself.” But she has other roads: as a Chef, sit a TRA skills assessment, take IELTS, score enough points for state-nominated skilled migration; or restructure the shop as a company co-owned with the Vietnamese community, so the company (with real partners) sponsors her as a chef; or get sponsored by another restaurant employer.\n\nEvery road needs the skills assessment, English, and a stack of paperwork — and none is guaranteed.\n\nPersuading Minh to stay is another road, but his career is set in Brisbane. Divorce means losing the dependent visa entirely, gambling on her own application. And Mei needs stability.\n\nEvery road costs her something to trade."
+    },
+    {
+      "id": "ch4c_decision",
+      "title": "第四章 · 决定",
+      "image": "ruth_ch4c.png",
+      "narrative": "Minh的机票订好了。她的签证、她的餐厅、她的女儿、她自己——全都摊在桌上。\n\n她想起胡志明市那个pho摊子，想起开张那天手抖着签字，想起Mei那句“我长大也要有自己的店”。\n\n这一个决定，将决定她是谁。",
+      "choices": [
+        {
+          "id": "ch4c_own_visa",
+          "text": "以厨师身份拿到自己的签证，留下来 —— 技能评估过了，不再靠谁的签证",
+          "effects": {
+            "visa": 1,
+            "skill": 1,
+            "mood": 1
+          },
+          "requirement": {
+            "skill": 6
+          },
+          "add_flags": [
+            "own_visa"
+          ],
+          "text_en": "Get her own visa as a chef, stay — the skills assessment passed, no longer riding on anyone's visa"
+        },
+        {
+          "id": "ch4c_follow",
+          "text": "跟Minh走，关掉餐厅 —— 保住签证，保住婚姻，失去她自己",
+          "effects": {
+            "money": -2,
+            "mood": -3,
+            "skill": -1
+          },
+          "add_flags": [
+            "followed_minh"
+          ],
+          "text_en": "Go with Minh, close the restaurant — keep the visa, keep the marriage, lose herself"
+        },
+        {
+          "id": "ch4c_divorce",
+          "text": "离婚，自己赌一把留下 —— 自由但暴露，签证是风险，但她不再是附属品",
+          "effects": {
+            "visa": -3,
+            "mood": -2
+          },
+          "add_flags": [
+            "divorced"
+          ],
+          "text_en": "Divorce, gamble on staying alone — free but exposed; the visa's a risk, but she's no one's dependent now"
+        }
+      ],
+      "title_en": "Chapter 4 · The Decision",
+      "narrative_en": "Minh's ticket is booked. Her visa, her restaurant, her daughter, herself — all of it laid out on the table.\n\nShe thinks of the pho stall in Ho Chi Minh City, of signing the lease with a shaking hand on opening day, of Mei saying “when I grow up I want my own shop too.”\n\nThis one decision will decide who she is."
+    }
+  ],
+  "endings": [
+    {
+      "id": "ending_independence",
+      "title": "结局：独立",
+      "image": "ruth_ending_independence.png",
+      "bgm": "mood_hopeful.mp3",
+      "tier": "独立",
+      "verdict": "隔着一整个大洋和一场婚姻，这碗pho的味道没变。她一个人做到了。",
+      "condition": {},
+      "flag_condition": {
+        "own_visa": true
+      },
+      "text": "厨师技能评估过了，雅思也考过了。Linh拿到了自己的签证——以一个厨师的身份，不再跟着任何人。餐厅的生意蒸蒸日上。Mei放学回来说英语带澳洲口音，说越南语带妈妈的口音。\n\nLinh站在她的厨房里——她的厨房——想起了胡志明市那个pho摊子。从那里到这里，隔了一整个大洋和一场婚姻。但这碗pho的味道没变。\n\n她一个人做到的。",
+      "title_en": "Ending: Independence",
+      "tier_en": "Independent",
+      "verdict_en": "Across a whole ocean and a marriage, the taste of this pho hasn't changed. She did it alone.",
+      "text_en": "The chef skills assessment passed, and so did the IELTS. Linh got her own visa — as a chef, no longer attached to anyone. The restaurant thrives. Mei comes home from school speaking English with an Aussie accent and Vietnamese with her mother's.\n\nLinh stands in her kitchen — her kitchen — and thinks of that pho stall in Ho Chi Minh City. From there to here, across a whole ocean and a marriage. But the taste of this bowl of pho hasn't changed.\n\nShe did it alone."
+    },
+    {
+      "id": "ending_sacrifice",
+      "title": "结局：牺牲",
+      "image": "ruth_ending_sacrifice.png",
+      "bgm": "mood_hollow.mp3",
+      "tier": "牺牲",
+      "verdict": "她关了店。很长一段时间，没有再煮pho。",
+      "condition": {},
+      "flag_condition": {
+        "followed_minh": true
+      },
+      "text": "她关了餐厅。跟Minh去了布里斯班。在那边找了份厨房工作。\n\n有些晚上她会搜“Marrickville Vietnamese restaurant”，看到别人的名字出现在她曾经的店面招牌上。她没哭。但很长一段时间，她没有再煮pho。\n\nMei有时候问：“妈妈，我们还会回悉尼吗？” Linh说：“也许吧。” 她不确定这是安慰女儿，还是安慰自己。",
+      "title_en": "Ending: Sacrifice",
+      "tier_en": "Sacrifice",
+      "verdict_en": "She closed the shop. For a long time, she didn't cook pho again.",
+      "text_en": "She closed the restaurant. Went with Minh to Brisbane. Found a kitchen job there.\n\nSome nights she searches “Marrickville Vietnamese restaurant,” and sees someone else's name on the sign of what used to be her shopfront. She didn't cry. But for a long time, she didn't cook pho again.\n\nSometimes Mei asks, “Mum, will we ever go back to Sydney?” Linh says, “Maybe.” She isn't sure whether she's comforting her daughter, or herself."
+    },
+    {
+      "id": "ending_adrift",
+      "title": "结局：漂泊",
+      "image": "ruth_ending_adrift.png",
+      "bgm": "mood_drift.mp3",
+      "tier": "漂泊",
+      "verdict": "故事没有结束。只是换了一间厨房。",
+      "condition": {},
+      "flag_condition": {},
+      "text": "离婚了。签证被拒。她收拾行李。Mei哭了。\n\n在回越南的飞机上，她抱着从胡志明市带来的那本食谱笔记本。封面磨损了，页角翘起来，上面有油渍和笔记。它是她唯一真正属于自己的东西。\n\n她三十八岁了。她开过一家餐厅，在异国他乡。她做到过。这件事没有人能从她手里拿走。即使现在，坐在三万英尺的高空，她脑子里还在想一碗pho的火候。\n\n故事没有结束。只是换了一间厨房。",
+      "title_en": "Ending: Adrift",
+      "tier_en": "Adrift",
+      "verdict_en": "The story isn't over. It just moved to a different kitchen.",
+      "text_en": "Divorced. Visa refused. She packs her bags. Mei cried.\n\nOn the plane back to Vietnam she holds the recipe notebook she brought from Ho Chi Minh City. The cover is worn, the corners curled, oil stains and notes on the pages. It's the one thing that's truly hers.\n\nShe's thirty-eight. She opened a restaurant, in a foreign country. She did it. No one can take that from her. Even now, at thirty thousand feet, she's thinking about the exact heat for a bowl of pho.\n\nThe story isn't over. It just moved to a different kitchen."
+    }
+  ]
+}

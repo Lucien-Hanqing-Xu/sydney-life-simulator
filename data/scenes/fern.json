@@ -1,0 +1,593 @@
+{
+  "character": "fern",
+  "bgm": "fern_play.mp3",
+  "scenes": [
+    {
+      "id": "ch1a_landing",
+      "title": "第一章 · 落地悉尼",
+      "image": "fern_ch1a.png",
+      "narrative": "飞机降落在悉尼机场，英语广播像白噪音一样淌过耳朵。小敏拖着一个行李箱挤上公交车，穿过陌生的街道，找到了Ashfield的合租屋——一间塞了四张床的小房间。\n\n室友小雯已经来了三个月，算是老手了。晚上两人坐在客厅吃泡面，小雯传授生存指南：“送外卖最快上手。平台怎么注册有门道，明天我手把手教你。先弄个电瓶车就能开工，等新人奖励结束了再想下一步。”\n\n半夜，躺在薄薄的床垫上，妈妈的电话来了：“到了吗？那边工资高吧？什么时候能寄钱回来？”",
+      "choices": [
+        {
+          "id": "ch1a_boundary",
+          "text": "先安顿好再说 —— 跟妈妈坦白，先适应再寄钱",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Settle in first — tell Mum the truth, adapt before sending money"
+        },
+        {
+          "id": "ch1a_promise",
+          "text": "放心妈，我尽快寄钱 —— 答应了再说，这是她习惯的角色",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "promised_money"
+          ],
+          "text_en": "Don't worry Mum, I'll send money soon — promise first; the role she's used to"
+        },
+        {
+          "id": "ch1a_silence",
+          "text": "挂掉电话，看着窗外陌生的夜 —— 不想回答，也不知道怎么回答",
+          "effects": {},
+          "add_flags": [],
+          "text_en": "Hang up, stare out at the strange night — no answer, and no idea how to give one"
+        }
+      ],
+      "title_en": "Chapter 1 · Landing in Sydney",
+      "narrative_en": "The plane touched down at Sydney Airport, the English announcements washing over her like white noise. Fern dragged a single suitcase onto a bus, through unfamiliar streets, to a share house in Ashfield — one small room crammed with four beds.\n\nHer roommate Xiaowen had been here three months, practically a veteran. Over instant noodles that night she passed on the survival guide: “Sign up for Uber Eats and DoorDash first — new riders get bonuses, you can make decent money the first few weeks. Get an e-bike and you can start. Figure out your next move once the bonus ends.”\n\nLate at night, on the thin mattress, Mum's call came: “Did you get there? Wages are high over there, right? When can you send money home?”"
+    },
+    {
+      "id": "ch1b_register",
+      "title": "第一章 · 注册",
+      "image": "fern_ch1b.png",
+      "narrative": "第二天，小雯手把手教她那套门道：“先用DoorDash注册，它能免费帮你办无犯罪证明，police check，这文件别的平台也认。拿到文件，再去Uber Eats，注册时选‘自行车送餐’，能免费领一套装备——保温包加一件外套。然后两个平台的新人奖励一起领，单子来回接。”\n\n她顿了顿，又说：“用我的推荐码呗。你跑满100单，平台返给我的推荐奖励，我分你80%。咱俩都不亏。”\n\n小敏一时分不清这是善意还是算计，但小雯笑得坦荡。手机屏幕亮着，妈妈又发来一条：你表姐家孩子都上私立了。",
+      "choices": [
+        {
+          "id": "ch1b_referral",
+          "text": "用小雯的推荐码，跟她搭伙跑 —— 信她一回，也是个照应",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [
+            "uses_referral"
+          ],
+          "text_en": "Use Xiaowen's referral code, team up with her — trust her once; it's company too"
+        },
+        {
+          "id": "ch1b_self",
+          "text": "自己摸索注册，不想欠人情 —— 凡事靠自己，心里踏实",
+          "effects": {
+            "skill": 1
+          },
+          "add_flags": [],
+          "text_en": "Sign up on her own, owe no favours — rely on herself, sleep easier"
+        },
+        {
+          "id": "ch1b_facesave",
+          "text": "给家里报喜，说这边一切都好 —— 撑着面子，把苦咽下去",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "promised_money"
+          ],
+          "text_en": "Tell the family everything's great — keep up appearances, swallow the hardship"
+        }
+      ],
+      "title_en": "Chapter 1 · Signing Up",
+      "narrative_en": "The next day, Xiaowen walked her through the routine: register for DoorDash first — it processes a free police check, a document the other platforms accept too. Then Uber Eats: choose “bicycle” delivery to get a free kit — an insulated bag and a jacket. Then claim the new-rider bonuses on both and bounce orders between them.\n\n“Use my referral code,” she added. “Once you finish 100 orders, I'll give you back 80% of the referral bonus. We both win.”\n\nFern couldn't tell if it was kindness or calculation, but Xiaowen smiled openly. Her phone lit up — another message from Mum: your cousin's kids are all in private school now."
+    },
+    {
+      "id": "ch1c_findbike",
+      "title": "第一章 · 找车",
+      "image": "fern_ch1c.png",
+      "narrative": "Uber的免费装备领到了——保温外卖包和一件荧光黄外套。但跑车还得有辆电瓶车，这个平台可不给。\n\n新车两千多，买不起。她在小红书翻二手，翻到一条：“急出 九成新电瓶车 续航10小时 大电池 刚骑三个月 $650 自取Burwood”。几乎是她三分之一的积蓄。\n\n她去看了车。卖家是个中国男生，在小区里骑了一圈演示，电量满格，看着挺好。小雯在微信上提醒：二手电瓶车水很深，续航都虚标，你多留个心眼。",
+      "choices": [
+        {
+          "id": "ch1c_inspect",
+          "text": "仔细验车，能砍就砍 —— 多问几句，至少别当冤大头",
+          "effects": {
+            "skill": 1,
+            "money": -1
+          },
+          "add_flags": [],
+          "text_en": "Inspect it carefully, haggle — at least don't be the sucker"
+        },
+        {
+          "id": "ch1c_rush",
+          "text": "急着开工，看着没问题就付钱 —— 早一天开工早一天赚钱",
+          "effects": {
+            "money": -1,
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Eager to start, just pay if it looks fine — every day earlier is money"
+        },
+        {
+          "id": "ch1c_splurge",
+          "text": "多凑点钱，买辆靠谱一点的 —— 工具是吃饭的家伙，不能省",
+          "effects": {
+            "money": -2,
+            "mood": 1
+          },
+          "add_flags": [
+            "bought_better"
+          ],
+          "text_en": "Scrape together more for a reliable one — your tools feed you, don't cut corners"
+        }
+      ],
+      "title_en": "Chapter 1 · Finding a Bike",
+      "narrative_en": "Uber's free kit arrived — an insulated delivery bag and a hi-vis jacket. But she still needed an e-bike to ride; the platform doesn't give you that.\n\nA new one was over two grand — too much. She scrolled secondhand listings on Xiaohongshu and found one: “Urgent sale, 90% new e-bike, 10-hour range, big battery, ridden 3 months, $650, pickup Burwood.” Nearly a third of her savings.\n\nShe went to see it. The seller, a Chinese guy, rode a lap to demo it — full charge, looked fine. Xiaowen warned over WeChat: secondhand e-bikes are a minefield, the range claims are always inflated, keep your guard up."
+    },
+    {
+      "id": "ch2a_honeymoon",
+      "title": "第二章 · 甜蜜期",
+      "image": "fern_ch2a.png",
+      "narrative": "头两周是甜蜜期。两个平台的新人奖励、推荐返点，能领的她都领了，订单接不停。她每天跑8到10小时，午高峰加晚高峰，一周赚了1200多刀。\n\n她往家里汇了500。妈妈难得高兴了一次，在电话那头絮絮叨叨地说邻居都羡慕。小敏握着发烫的手机，站在便利店门口啃一个三明治当晚饭，心里居然是甜的。\n\n原来在悉尼，努力是真的能换来钱的。这个认知让她踏实。",
+      "choices": [
+        {
+          "id": "ch2a_grind",
+          "text": "玩命跑，多寄钱回家 —— 趁现在能赚，多寄一点是一点",
+          "effects": {
+            "money": 2,
+            "mood": -1
+          },
+          "add_flags": [
+            "sent_home"
+          ],
+          "text_en": "Ride like crazy, send more home — earn while you can"
+        },
+        {
+          "id": "ch2a_plan",
+          "text": "跑之余开始做规划 —— 钱要赚，但也得想想送餐之后的路",
+          "effects": {
+            "skill": 1,
+            "money": 1
+          },
+          "add_flags": [],
+          "text_en": "Start planning between rides — earn, but think past delivery"
+        },
+        {
+          "id": "ch2a_rest",
+          "text": "给自己留点钱和休息 —— 别把自己耗干了",
+          "effects": {
+            "money": 1,
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Keep some money and rest for herself — don't burn out"
+        }
+      ],
+      "title_en": "Chapter 2 · The Honeymoon",
+      "narrative_en": "The first two weeks were the honeymoon. New-rider bonuses and referral kickbacks on both platforms — she claimed everything she could, orders never stopped. She rode 8 to 10 hours a day, lunch peak and dinner peak, and cleared over $1,200 in a week.\n\nShe wired $500 home. Mum was happy for once, going on about how the neighbours envied them. Fern stood outside a convenience store gnawing a sandwich for dinner, hot phone in hand, and somehow it felt sweet.\n\nSo in Sydney, effort really could turn into money. The thought steadied her."
+    },
+    {
+      "id": "ch2b_breakdown",
+      "title": "第二章 · 抛锚",
+      "image": "fern_ch2b.png",
+      "bgm": "mood_hollow.mp3",
+      "narrative": "然后是那个周五晚上。连续跑了四个半小时，电量从25%毫无征兆地跳到0。电机停了。她在Strathfield后面一条不认识的街上，手里提着一袋凉透的pad thai，手机电量15%，app在催：Delivery delayed。\n\n她推着熄火的车在黑暗里走，汗和眼泪混在一起。\n\n一盏门廊灯亮了。一个五十多岁的澳洲女人穿着睡袍走出来：“Are you alright, love?” 小敏的英语不够用，但那个女人全懂了。她把车推进车库充电，给小敏泡了杯茶。两人在门廊上坐着等。女人没问签证、没问从哪来，只说了一句：“Sydney can be tough when you're new. But you'll be alright.”\n\n小敏没听懂每个词。但够了。",
+      "choices": [
+        {
+          "id": "ch2b_grateful",
+          "text": "谢过她，把这份善意记在心里 —— 黑暗里的一盏灯，她会记很久",
+          "effects": {
+            "mood": 2
+          },
+          "add_flags": [
+            "kindness"
+          ],
+          "text_en": "Thank her, keep that kindness close — a light in the dark she'll remember"
+        },
+        {
+          "id": "ch2b_cry",
+          "text": "太累了，蹲在路边哭了一场 —— 哭完，擦干，明天还得跑",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Too exhausted — she crouches by the road and weeps it out"
+        },
+        {
+          "id": "ch2b_tough",
+          "text": "硬扛着把车推回家 —— 不想麻烦别人，自己的事自己扛",
+          "effects": {
+            "skill": 1,
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Grit her teeth and push the bike home — her problems, her own to carry"
+        }
+      ],
+      "title_en": "Chapter 2 · Breakdown",
+      "narrative_en": "Then came that Friday night. After four and a half hours straight, the battery jumped from 25% to 0 with no warning. The motor died. She was on some street she didn't know behind Strathfield, a bag of cold pad thai in hand, phone at 15%, the app nagging: Delivery delayed.\n\nShe pushed the dead bike through the dark, sweat and tears mixing.\n\nA porch light came on. A woman in her fifties came out in a dressing gown: “Are you alright, love?” Fern's English wasn't enough, but the woman understood it all. She wheeled the bike into the garage to charge and made her a cup of tea. They sat on the porch and waited. The woman didn't ask about visas or where she came from — just said, “Sydney can be tough when you're new. But you'll be alright.”\n\nFern didn't catch every word. But it was enough."
+    },
+    {
+      "id": "ch2c_aftermath",
+      "title": "第二章 · 真相",
+      "image": "fern_ch2c.png",
+      "narrative": "电瓶车真实续航：四到五个小时。卖家说的十小时，骗人的。650刀要不回来了。\n\n她盯着那辆车看了很久。它不只是一辆车——是她在这座城市第一次被人当软柿子捏。语言不通、人生地不熟、急着开工，每一样都写在脸上，骗子一眼就看穿了。\n\n但日子还得过。订单还在响。",
+      "choices": [
+        {
+          "id": "ch2c_confront",
+          "text": "找卖家算账，发避雷帖 —— 被拉黑，但第一次学会为自己说话",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [
+            "spoke_up"
+          ],
+          "text_en": "Confront the seller, post a warning — blocked, but she learns to speak up for herself"
+        },
+        {
+          "id": "ch2c_adapt",
+          "text": "认了，多买块电池，规划路线 —— 适应这破车，把日子过下去",
+          "effects": {
+            "money": -1,
+            "skill": 1
+          },
+          "add_flags": [],
+          "text_en": "Accept it, buy a spare battery, plan routes — make peace with the junk bike"
+        },
+        {
+          "id": "ch2c_pivot",
+          "text": "接受现实，开始想下一步 —— 送餐不是长久之计，该研究白卡和RSA了",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "early_pivot"
+          ],
+          "text_en": "Accept reality, think about next steps — delivery's no future; time for the White Card and RSA"
+        }
+      ],
+      "title_en": "Chapter 2 · The Truth",
+      "narrative_en": "The e-bike's real range: four to five hours. The seller's ten hours was a lie. The $650 was gone.\n\nShe stared at the bike a long time. It wasn't just a bike — it was the first time this city treated her like an easy mark. Language barrier, new in town, desperate to start: it was written all over her, and the scammer read it in a glance.\n\nBut life went on. The orders kept ringing."
+    },
+    {
+      "id": "ch3a_drying",
+      "title": "第三章 · 退潮",
+      "image": "fern_ch3a.png",
+      "narrative": "新人奖励结束了。原来接不停的订单变成了空转绕圈，平台抽成越来越狠，冬天骑车手冻得握不住把。\n\n小雯已经转型了——考了RSA去CBD的酒吧上班。“送餐就是过渡，别当长期饭碗，”她说，“你也该想想了。”\n\n小敏知道她说得对。每天跑十小时，刨去油电和抽成，剩下的越来越薄。这条路，正在慢慢沉下去。",
+      "choices": [
+        {
+          "id": "ch3a_persist",
+          "text": "继续硬撑送餐 —— 不想从头再来，再熬熬看",
+          "effects": {
+            "mood": -2
+          },
+          "add_flags": [
+            "stuck_delivery"
+          ],
+          "text_en": "Keep grinding delivery — don't want to start over, just hang on a bit longer"
+        },
+        {
+          "id": "ch3a_research",
+          "text": "下班后去研究白卡和RSA —— 累归累，得给自己找条新路",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "researching"
+          ],
+          "text_en": "Look into the White Card and RSA after work — tired, but she needs a new road"
+        },
+        {
+          "id": "ch3a_network",
+          "text": "找老乡打听别的门路 —— 多个人脉多条路",
+          "effects": {
+            "skill": 1,
+            "money": 1
+          },
+          "add_flags": [],
+          "text_en": "Ask around among fellow migrants for other openings — more contacts, more options"
+        }
+      ],
+      "title_en": "Chapter 3 · The Tide Goes Out",
+      "narrative_en": "The new-rider bonus ended. The endless orders became empty laps; the platform's cut grew; winter froze her hands on the grips.\n\nXiaowen had already pivoted — got her RSA, working a bar in the CBD. “Delivery's a stopgap, don't make it a career,” she said. “You should be thinking too.”\n\nFern knew she was right. Ten hours a day, minus battery and platform cuts, and what was left got thinner and thinner. This road was slowly sinking."
+    },
+    {
+      "id": "ch3b_choice",
+      "title": "第三章 · 转型",
+      "image": "fern_ch3b.png",
+      "narrative": "摆在面前两条路：白卡（工地，体力活，时薪$30+，现金），或者RSA（餐馆、超市，稳定，能练英语）。\n\n白卡一天就能拿证，工地钱多但累，全场可能就她一个女的。RSA进的是服务业，钱少一点，但能站着说人话、练口语、攒人脉。\n\n她攥着手机，算了又算。",
+      "choices": [
+        {
+          "id": "ch3b_whitecard",
+          "text": "考白卡，去工地 —— 搬砖拆墙，时薪高，咬牙扛",
+          "effects": {
+            "money": 2,
+            "skill": 1,
+            "mood": -1
+          },
+          "add_flags": [
+            "construction"
+          ],
+          "text_en": "Get the White Card, go to the sites — hauling and demolishing, high pay, grit it out"
+        },
+        {
+          "id": "ch3b_rsa",
+          "text": "考RSA，进餐馆或超市 —— 稳定排班，练英语和服务技能",
+          "effects": {
+            "money": 1,
+            "skill": 2,
+            "mood": 1
+          },
+          "add_flags": [
+            "hospitality"
+          ],
+          "text_en": "Get the RSA, into a restaurant or supermarket — steady shifts, English and service skills"
+        },
+        {
+          "id": "ch3b_both",
+          "text": "两个都考，看哪边先来活 —— 花点钱但选择多",
+          "effects": {
+            "money": -1,
+            "skill": 2
+          },
+          "requirement": {
+            "money": 4
+          },
+          "add_flags": [
+            "both_certs"
+          ],
+          "text_en": "Get both, see which gives work first — costs more but more options"
+        },
+        {
+          "id": "ch3b_stay",
+          "text": "还是继续送餐吧，至少自由 —— 不想从头再来",
+          "effects": {
+            "mood": -2
+          },
+          "add_flags": [
+            "stuck_delivery"
+          ],
+          "text_en": "Just keep delivering, at least it's free — doesn't want to start over"
+        }
+      ],
+      "title_en": "Chapter 3 · Levelling Up",
+      "narrative_en": "Two roads ahead: the White Card (construction, labour, $30+/hr, cash), or the RSA (restaurants, supermarkets, stable, real English).\n\nThe White Card takes a day to get — sites pay well but the work is brutal, and she might be the only woman there. The RSA leads into hospitality — less money, but you stand upright, talk to people, practise your English, build contacts.\n\nShe gripped her phone, doing the maths again and again."
+    },
+    {
+      "id": "ch3c_grind",
+      "title": "第三章 · 攒",
+      "image": "fern_ch3c.png",
+      "narrative": "新工作上手了。手上磨出了茧，英语在一句句“How are you going”里慢慢顺了，银行账户的数字一点点往上爬。\n\n她学会了看排班表抢班，学会了在收工后跟同事用蹩脚英语聊两句，学会了把每一分钱掰开花。\n\n累，但和漫无目的地绕圈送餐不一样——这一次，她能感觉到自己在往某个地方走。",
+      "choices": [
+        {
+          "id": "ch3c_save",
+          "text": "拼命攒钱，几乎不休息 —— 多攒一笔，未来就多一个选择",
+          "effects": {
+            "money": 2,
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Save like mad, barely rest — more saved means one more option later"
+        },
+        {
+          "id": "ch3c_grow",
+          "text": "边干边练英语长本事 —— 钱重要，但本事是带得走的",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Build skills and English on the job — money matters, but skills travel with you"
+        },
+        {
+          "id": "ch3c_breathe",
+          "text": "给自己喘口气，约朋友 —— 人不是机器，得喘口气",
+          "effects": {
+            "mood": 2,
+            "money": -1
+          },
+          "add_flags": [],
+          "text_en": "Give herself a breather, see friends — she's not a machine"
+        }
+      ],
+      "title_en": "Chapter 3 · Saving Up",
+      "narrative_en": "The new job clicked. Calluses on her hands; her English smoothing out one “How are you going” at a time; the bank balance creeping up.\n\nShe learned to grab shifts off the roster, to chat with coworkers in broken English after close, to split every dollar into pieces.\n\nTiring — but unlike riding aimless laps, this time she could feel herself moving toward somewhere."
+    },
+    {
+      "id": "ch4a_countdown",
+      "title": "第四章 · 倒计时",
+      "image": "fern_ch4a.png",
+      "narrative": "在澳洲半年多了。送过餐、搬过砖、端过盘子。她认识了很多人，也看过很多人离开。WHV的倒计时从来没停过。\n\n合租屋里人人都在聊同一件事：二签需要去偏远地区做满88天指定工作。有人去了昆士兰摘草莓，有人去了南澳肉厂，有人去了塔州农场。回来的人晒得黑、累得狠，但手里多了一年时间，和一条隐隐约约通向永居的路。\n\n小敏看了看银行余额，又看了看WHV到期日，然后打开了Carsales：一辆2007年的丰田RAV4，跑了26万公里，修复过的事故车，卖$6000——便宜得让人心里发虚，但她也只买得起这种。\n\n她盯着那张车的照片看了很久。",
+      "choices": [
+        {
+          "id": "ch4a_consider",
+          "text": "认真考虑去偏远地区集签 —— 怕，但好像该赌一把",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [
+            "considering_regional"
+          ],
+          "text_en": "Seriously consider going regional — scared, but maybe it's time to gamble"
+        },
+        {
+          "id": "ch4a_fear",
+          "text": "害怕未知，想留在熟悉的悉尼 —— 至少这里她熟了",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "fear_unknown"
+          ],
+          "text_en": "Afraid of the unknown, wants to stay in familiar Sydney — at least she knows it here"
+        },
+        {
+          "id": "ch4a_homesick",
+          "text": "想家了，考虑要不要回国 —— 累了，也许该停了",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "homesick"
+          ],
+          "text_en": "Homesick, thinking about going back — tired; maybe it's time to stop"
+        }
+      ],
+      "title_en": "Chapter 4 · The Countdown",
+      "narrative_en": "Over half a year in Australia now. She'd delivered, hauled bricks, waited tables. Met a lot of people, watched a lot of them leave. The WHV countdown never stopped.\n\nIn the share house everyone talked about the same thing: the second-year visa needs 88 days of specified work in a regional area. Some went to Queensland for strawberries, some to a South Australian meatworks, some to a Tasmanian farm. They came back dark and wrecked — but with another year in hand, and a faint, maybe-line toward permanence.\n\nFern looked at her bank balance, then her visa expiry, then opened Carsales: a 2007 Toyota RAV4, 260,000 km, a repaired accident car, $6,000 — cheap enough to make her uneasy, but it was all she could afford.\n\nShe stared at the photo of the car a long time."
+    },
+    {
+      "id": "ch4b_doubt",
+      "title": "第四章 · 掂量",
+      "image": "fern_ch4b.png",
+      "narrative": "决定不好下。那辆车要掏空她大半积蓄，集签的农场活又苦又不确定——万一凑不满88天呢？万一车半路抛锚呢？万一……\n\n夜里她翻来覆去。手机里两个页面来回切：一个是Carsales那辆RAV4，一个是Skyscanner回国的机票。\n\n她想起Strathfield那个门廊，那杯茶，那句“你会没事的”。",
+      "choices": [
+        {
+          "id": "ch4b_callhome",
+          "text": "给妈妈打电话，第一次说出真实想法 —— 不再报喜不报忧",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Call Mum, say what she really feels for once — no more hiding the hardship"
+        },
+        {
+          "id": "ch4b_lastpush",
+          "text": "算清账，咬牙攒最后一笔 —— 要走就走得稳一点",
+          "effects": {
+            "money": 1,
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Crunch the numbers, save one last push — leave on steadier ground"
+        },
+        {
+          "id": "ch4b_shrink",
+          "text": "越想越怕，想退缩 —— 也许她不是那块料",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "fear_unknown"
+          ],
+          "text_en": "The more she thinks, the more afraid — maybe she's not cut out for it"
+        }
+      ],
+      "title_en": "Chapter 4 · Weighing It Up",
+      "narrative_en": "The decision wouldn't come. The car would drain most of her savings; the farm work was hard and uncertain — what if she couldn't make the 88 days? What if the car broke down on the road? What if…\n\nShe tossed and turned. Two pages on her phone, flicking between them: that RAV4 on Carsales, and a one-way ticket home on Skyscanner.\n\nShe thought of that porch in Strathfield, the cup of tea, the words “you'll be alright.”"
+    },
+    {
+      "id": "ch4c_decision",
+      "title": "第四章 · 十字路口",
+      "image": "fern_ch4c.png",
+      "narrative": "倒计时只剩最后几页。该选了。\n\n一辆跑了十八万公里的旧车，一条通向偏远地区的长路，一张回国的单程机票，一个熟悉但停滞的悉尼。\n\n她想起自己刚下飞机那天，拖着一个箱子，谁也不认识。那时候的她，会怎么选？",
+      "choices": [
+        {
+          "id": "ch4c_regional",
+          "text": "买车，去偏远地区集签 —— 收拾行李，开上M1往北，去赌一个可能的未来",
+          "effects": {
+            "money": -4,
+            "visa": 3,
+            "skill": 1,
+            "mood": 1
+          },
+          "requirement": {
+            "money": 5
+          },
+          "add_flags": [
+            "road_trip"
+          ],
+          "text_en": "Buy the car, go regional for the days — pack up, drive north on the M1, gamble on a possible future"
+        },
+        {
+          "id": "ch4c_stay",
+          "text": "不想走了，在悉尼继续熬 —— “再看看吧”，这个月第三次这么说",
+          "effects": {
+            "money": 1,
+            "mood": -1
+          },
+          "add_flags": [
+            "stayed_sydney"
+          ],
+          "text_en": "Doesn't want to leave, keeps grinding in Sydney — “we'll see,” for the third time this month"
+        },
+        {
+          "id": "ch4c_home",
+          "text": "算了，回家吧 —— 累了。骗局、灰尘、冬夜的冷，她受够了",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "went_home"
+          ],
+          "text_en": "Forget it, go home — worn out by the scam, the dust, the cold delivery nights"
+        },
+        {
+          "id": "ch4c_relationship",
+          "text": "找个男朋友解决身份 —— 有人说“找个local拿PR”，她听过太多次",
+          "effects": {
+            "visa": 1,
+            "mood": -2
+          },
+          "add_flags": [
+            "relationship_path"
+          ],
+          "text_en": "Find a boyfriend to fix the status — “find a local for PR,” she's heard it too many times"
+        }
+      ],
+      "title_en": "Chapter 4 · The Crossroads",
+      "narrative_en": "Only the last few pages of the countdown left. Time to choose.\n\nAn old car with 260,000 km, a long road into the regions, a one-way ticket home, a familiar but stalled Sydney.\n\nShe thought of the day she landed, dragging one suitcase, knowing no one. That version of her — what would she choose?"
+    }
+  ],
+  "endings": [
+    {
+      "id": "ending_road",
+      "title": "结局：踏上远路",
+      "image": "fern_ending_road.png",
+      "bgm": "mood_hopeful.mp3",
+      "tier": "上路",
+      "verdict": "你不是在逃离什么，而是第一次，朝着什么开去。",
+      "condition": {},
+      "flag_condition": {
+        "road_trip": true
+      },
+      "text": "小敏买了那辆跑了26万公里、修复过事故的2007年RAV4。便宜，旧，谁也不知道它能撑多久——但这是她唯一买得起的车。她把全部家当塞进后备箱——没装满一半。合租屋的姐妹们帮她搬东西，小雯塞给她一个充电宝和一个拥抱：“到了给我发消息。”\n\n她从悉尼沿M1公路往北开。城市渐渐稀薄——Hornsby，然后Hawkesbury，然后只剩公路和天空。她这辈子没开过这么远的路。GPS显示还有8小时到草莓农场。RAV4过了100码开始抖。收音机放着她不认识的歌。\n\n她不知道能不能凑满88天。不知道二签能不能通向什么永久的东西。甚至不知道这辆车能不能撑到。但这是她来澳洲以后第一次朝着什么东西在开，而不是在逃离什么东西。\n\n路很长。她也是。",
+      "title_en": "Ending: The Long Road",
+      "tier_en": "On the Road",
+      "verdict_en": "You're not running from something — for the first time, you're driving toward something.",
+      "text_en": "Fern bought that 2007 RAV4 with 260,000 km and a repaired accident history. Cheap, old, no one knew how long it would last — but it was the only car she could afford. She packed everything she owned into the boot — didn't even fill half of it. The girls from the share house helped her load up; Xiaowen pressed a power bank and a hug on her: “Message me when you get there.”\n\nShe drove north on the M1 out of Sydney. The city thinned — Hornsby, then Hawkesbury, then just road and sky. She'd never driven this far in her life. Past 100 the RAV4 shook. The radio played songs she didn't know.\n\nShe didn't know if she'd make the 88 days. Didn't know if the second-year visa led anywhere permanent. Didn't even know if the car would make it. But it was the first time since arriving that she was driving toward something, instead of away from it.\n\nThe road was long. So was she."
+    },
+    {
+      "id": "ending_home",
+      "title": "结局：黯然回国",
+      "image": "fern_ending_home.png",
+      "bgm": "mood_hollow.mp3",
+      "tier": "归乡",
+      "verdict": "有时候事情就是不成。这不是失败——但此刻，感觉像是。",
+      "condition": {},
+      "flag_condition": {
+        "went_home": true
+      },
+      "text": "她买了最便宜的单程机票。在航站楼里，她坐在那个来时同样的行李箱旁边——多了几道划痕。她翻手机里的照片：合租屋、电瓶车、工地的模糊自拍、Strathfield那个门廊。\n\n飞机起飞时她望着窗外，悉尼在下面缩小。海港、大桥、她推过死车的那些居民区街道。她以为自己会哭。没有。只是空了。\n\n落地后妈妈在接机口。她看起来老了一些。她没说“你怎么回来了”。只是抱住了女儿。\n\n有时候事情就是不成。这不是失败。但此刻，感觉像是。",
+      "title_en": "Ending: Going Home",
+      "tier_en": "Homecoming",
+      "verdict_en": "Sometimes it just doesn't work out. It isn't failure — but right now, it feels like it.",
+      "text_en": "She bought the cheapest one-way ticket. In the terminal she sat beside the same suitcase she'd arrived with — a few more scratches now. She scrolled through her photos: the share house, the e-bike, a blurry selfie at a construction site, that porch in Strathfield.\n\nAs the plane lifted off she watched Sydney shrink below. The harbour, the bridge, the suburban streets where she'd pushed a dead bike. She thought she'd cry. She didn't. She was just empty.\n\nMum was at arrivals. She looked a little older. She didn't say “why are you back.” She just held her daughter.\n\nSometimes things just don't work out. It isn't failure. But right now, it feels like it."
+    },
+    {
+      "id": "ending_drift",
+      "title": "结局：继续迷茫",
+      "image": "fern_ending_drift.png",
+      "bgm": "mood_drift.mp3",
+      "tier": "漂流",
+      "verdict": "两个app都关掉，再接一单。电量60%，暂时够了。",
+      "condition": {},
+      "flag_condition": {},
+      "text": "她留在悉尼。WHV还剩几个月，或者她想了别的办法续上了。她上班、吃饭、睡觉。合租屋换了一批室友；小雯搬走了，新来的女生带着她当初一样的问题。她给她们说小雯当初跟她说的那些话：“办ABN，注册Uber Eats，买个电瓶车……”\n\n有些晚上她打开Carsales看那辆RAV4。有些晚上她打开Skyscanner看回国机票。两个app都关掉，打开Uber Eats接一单。又一单。电量60%。暂时够了。",
+      "title_en": "Ending: Still Adrift",
+      "tier_en": "Adrift",
+      "verdict_en": "Close both apps, take one more order. Battery at 60%. Enough for now.",
+      "text_en": "She stayed in Sydney. A few months left on the WHV, or maybe she found another way to extend. She works, eats, sleeps. The share house cycled through new roommates; Xiaowen moved out, and the new girl arrived with the same questions she once had. Fern tells her what Xiaowen once told her: “Get an ABN, sign up for Uber Eats, buy an e-bike…”\n\nSome nights she opens Carsales and looks at the RAV4. Some nights she opens Skyscanner and looks at tickets home. She closes both apps, opens Uber Eats, takes an order. Then another. Battery at 60%. Enough for now."
+    }
+  ]
+}

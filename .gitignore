@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Runtime save file (auto-generated)
+data/save.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+.Rhistory
+
+# Local-only logo working files (raw black/white originals, not for publishing)
+assets/images/_logo_backup/

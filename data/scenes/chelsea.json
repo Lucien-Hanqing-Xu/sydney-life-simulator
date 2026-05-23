@@ -1,0 +1,572 @@
+{
+  "character": "chelsea",
+  "bgm": "chelsea_play.mp3",
+  "scenes": [
+    {
+      "id": "ch1a_itgirl",
+      "title": "第一章 · 悉尼名媛",
+      "image": "chelsea_ch1a.png",
+      "narrative": "思琪的悉尼生活像一个精心策划的Instagram feed。Darling Harbour的两居室海景公寓，落地窗，大理石厨房（她从不做饭）。日常：Surry Hills的Bills吃brunch，USYD上课（大部分时候到场），Westfield逛街，晚上去高级日料或意大利餐厅，周末泡Art Gallery of NSW或White Rabbit。每一帧都发小红书，两万粉丝。\n\n在中国留学生圈里，她是那个所有人都知道的女生。男生们绕着她转——请她喝咖啡、开车送她。女生们当面对她很好。她不是不知道这些有多少是真的，但她习惯了。这就是她认识的世界。",
+      "choices": [
+        {
+          "id": "ch1a_enjoy",
+          "text": "享受这一切，你值得 —— 继续打卡，更多粉丝，更多点赞",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Enjoy it all, you deserve it — more check-ins, more followers, more likes"
+        },
+        {
+          "id": "ch1a_study",
+          "text": "也认真搞搞学业 —— 传媒课的品牌叙事项目，竟然有点意思",
+          "effects": {
+            "skill": 2
+          },
+          "add_flags": [
+            "academic_interest"
+          ],
+          "text_en": "Actually take her studies seriously — the media brand-storytelling project is unexpectedly interesting"
+        },
+        {
+          "id": "ch1a_outside",
+          "text": "交一些圈外朋友 —— 认识些不知道她家底、不在乎她包的人",
+          "effects": {
+            "skill": 1
+          },
+          "add_flags": [
+            "outside_circle"
+          ],
+          "text_en": "Make friends outside the circle — people who don't know her family money or care about her bags"
+        }
+      ],
+      "title_en": "Chapter 1 · Sydney It-Girl",
+      "narrative_en": "Chelsea's Sydney life looks like a carefully curated Instagram feed. A two-bedroom harbour-view apartment at Darling Harbour, floor-to-ceiling windows, a marble kitchen (she never cooks). The routine: brunch at Bills in Surry Hills, classes at USYD (mostly attended), shopping at Westfield, fine Japanese or Italian in the evenings, weekends at the Art Gallery of NSW or White Rabbit. Every frame goes to Xiaohongshu — twenty thousand followers.\n\nIn the Chinese international-student circle, she's the girl everyone knows. Guys orbit her — coffees, lifts. Girls are lovely to her face. She knows how much of it is real, but she's used to it. This is the world she knows."
+    },
+    {
+      "id": "ch1b_suitor",
+      "title": "第一章 · 追求者",
+      "image": "chelsea_ch1b.png",
+      "narrative": "张浩，深圳来的commerce富二代，追她追得高调——送名牌、包场餐厅、朋友圈里各种暗示。思琪不缺这些。她礼貌但干脆地拒绝了。张浩脸上的笑，淡了下去。\n\n圈子里的李薇当面对她热络，“姐妹”叫得亲，可思琪看得出那种藏不住的较劲——比包、比男朋友、比谁的brunch更精致。这套人情她从小看到大，懂规则，也懂规则背后的东西。",
+      "choices": [
+        {
+          "id": "ch1b_clean",
+          "text": "干脆利落地拒绝张浩，不留余地 —— 不想耽误谁，也不欠人情",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Turn Zhang Hao down clean, no room left — don't lead anyone on, owe nothing"
+        },
+        {
+          "id": "ch1b_smooth",
+          "text": "委婉周旋，不想得罪人 —— 圈子就这么大，留点体面",
+          "effects": {
+            "skill": 1
+          },
+          "add_flags": [],
+          "text_en": "Smooth it over, don't make enemies — small circle, keep it civil"
+        },
+        {
+          "id": "ch1b_self",
+          "text": "懒得搭理，继续做自己 —— 谁爱较劲谁较劲",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Can't be bothered, just be herself — let whoever wants to compete, compete"
+        }
+      ],
+      "title_en": "Chapter 1 · The Suitor",
+      "narrative_en": "Zhang Hao, a Shenzhen rich kid doing commerce, chases her loudly — designer gifts, booked-out restaurants, all sorts of hints on his feed. Chelsea doesn't lack any of it. She turns him down, polite but clean. The smile on Zhang Hao's face fades.\n\nIn the circle, Li Wei is warm to her face, calls her “bestie,” but Chelsea can see the competition she can't quite hide — bags, boyfriends, whose brunch is more exquisite. She's watched this game of social face since childhood. She knows the rules, and what's behind them."
+    },
+    {
+      "id": "ch1c_depth",
+      "title": "第一章 · 圈外",
+      "image": "chelsea_ch1c.png",
+      "narrative": "传媒课上，教授布置了一个品牌叙事的项目。思琪本来没当回事，做着做着却停不下来——她忽然发现，自己天生就懂一个故事怎么讲才能打动人，一个牌子怎么立才能让人记住。这种感觉，比任何一条爆款笔记都让她踏实。\n\n下课，一个不在她圈子里的女生约她喝咖啡，聊的不是包和男朋友，是各自真正想做的事。思琪愣了一下，才想起来上一次有人这样跟她说话是什么时候。\n\n原来在那个精致的feed之外，还有另一个她。",
+      "choices": [
+        {
+          "id": "ch1c_project",
+          "text": "一头扎进品牌叙事项目 —— 第一次为成绩之外的东西熬夜",
+          "effects": {
+            "skill": 2
+          },
+          "add_flags": [
+            "academic_interest"
+          ],
+          "text_en": "Throw herself into the brand-storytelling project — first all-nighter for something other than grades"
+        },
+        {
+          "id": "ch1c_friend",
+          "text": "和圈外朋友走得近一点 —— 久违的、不用演的对话",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "outside_circle"
+          ],
+          "text_en": "Get closer to the friend outside the circle — a long-missed, unperformed conversation"
+        },
+        {
+          "id": "ch1c_back",
+          "text": "还是回到熟悉的圈子 —— 那才是她待惯的地方",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Go back to the familiar circle — that's where she's used to being"
+        }
+      ],
+      "title_en": "Chapter 1 · Outside the Circle",
+      "narrative_en": "In media class, the professor assigns a brand-storytelling project. Chelsea didn't take it seriously at first, then couldn't stop — she realises she instinctively understands how a story is told to move people, how a brand is built to be remembered. The feeling grounds her more than any viral post ever has.\n\nAfter class, a girl from outside her circle asks her for coffee — they talk not about bags and boyfriends but about what each of them actually wants to do. Chelsea pauses, trying to remember the last time anyone spoke to her like this.\n\nIt turns out, beyond that polished feed, there's another her."
+    },
+    {
+      "id": "ch2a_rumors",
+      "title": "第二章 · 黄谣",
+      "image": "chelsea_ch2a.png",
+      "bgm": "mood_cold.mp3",
+      "narrative": "一切始于一张群聊截图。张浩——被她拒绝过的那个——开始跟人说他们上过床。然后细节被添加、编造、变得龌龊。一直嫉妒她的李薇跳出来“证实”，添油加醋，说得有鼻子有眼。\n\n一周之内，所有中国留学生微信群都在传。“求瓜”“吃瓜”刷屏，陌生人往她私信里甩截图，配一句“是你吧？”。\n\n思琪懵了。她被议论过——有钱的漂亮女生总被议论——但这次不一样。这是有人在拿她的身体和名誉，喂一整个圈子的恶意。",
+      "choices": [
+        {
+          "id": "ch2a_clarify",
+          "text": "第一时间在群里澄清 —— 可辟谣的速度，永远追不上谣言",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Clarify in the groups right away — but the truth never outruns the rumour"
+        },
+        {
+          "id": "ch2a_evidence",
+          "text": "强忍着截图取证，保持冷静 —— 她预感这事不会善了",
+          "effects": {
+            "skill": 1
+          },
+          "add_flags": [],
+          "text_en": "Force herself calm, screenshot everything — she senses this won't end clean"
+        },
+        {
+          "id": "ch2a_frozen",
+          "text": "彻底懵了，不知所措 —— 手机一震她就心跳到嗓子眼",
+          "effects": {
+            "mood": -2
+          },
+          "add_flags": [],
+          "text_en": "Completely frozen, lost — her heart leaps to her throat every time the phone buzzes"
+        }
+      ],
+      "title_en": "Chapter 2 · The Smear",
+      "narrative_en": "It starts with a group-chat screenshot. Zhang Hao — the one she turned down — tells people they slept together. Then details are added, invented, made filthy. Li Wei, long jealous, jumps in to “confirm,” embellishing, making it sound airtight.\n\nWithin a week it's in every Chinese student WeChat group. “Spill the tea” floods the chats; strangers drop screenshots into her DMs with “this you?”.\n\nChelsea is stunned. She's been talked about — rich, pretty girls always are — but this is different. Someone is feeding a whole circle's malice with her body and her name."
+    },
+    {
+      "id": "ch2b_outofcontrol",
+      "title": "第二章 · 失控",
+      "image": "chelsea_ch2b.png",
+      "bgm": "mood_cold.mp3",
+      "narrative": "事情彻底失控了。有人盗她的照片做了假号，发不堪入目的内容。有人“开盒”——把她的公寓、她的课表、她住的楼，挂到了网上。小红书评论区变成了粪坑。\n\n她以为是朋友的人，沉默了，或者悄悄取关。没有人替她说一句话。\n\n她吃不下，睡不着，不敢去学校，走在校园里觉得每一道目光都在看她、议论她。她在群里一遍遍解释“这些都是假的”——但辟谣永远追不上谣言，越解释，看热闹的人越多。",
+      "choices": [
+        {
+          "id": "ch2b_shut",
+          "text": "删掉所有app，把自己关起来 —— 看不见，是不是就不疼了",
+          "effects": {
+            "mood": -2
+          },
+          "add_flags": [
+            "endured_rumors"
+          ],
+          "text_en": "Delete every app, shut herself in — if she can't see it, does it stop hurting"
+        },
+        {
+          "id": "ch2b_report",
+          "text": "一条条举报假号、保存证据 —— 手在抖，但她不想就这么认了",
+          "effects": {
+            "skill": 1,
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Report the fake accounts one by one, save evidence — hands shaking, but she won't just take it"
+        },
+        {
+          "id": "ch2b_callhome",
+          "text": "给家里打电话求助 —— 第一次，她不知道该怎么自己扛",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Call home for help — for the first time, she doesn't know how to carry it alone"
+        }
+      ],
+      "title_en": "Chapter 2 · Out of Control",
+      "narrative_en": "It spirals. Someone makes fake accounts with her photos posting obscene content. Someone doxxes her — posts her apartment, her timetable, her building. Xiaohongshu comment sections turn into cesspits.\n\nPeople she thought were friends go silent, or quietly unfollow. No one says a word for her.\n\nShe can't eat, can't sleep, can't face campus; walking through it she feels every glance is on her, talking about her. She explains over and over in the groups, “none of this is true” — but the truth never outruns the rumour; the more she explains, the bigger the crowd."
+    },
+    {
+      "id": "ch2c_fightback",
+      "title": "第二章 · 反击",
+      "image": "chelsea_ch2c.png",
+      "bgm": "mood_cold.mp3",
+      "narrative": "她得决定怎么应对。\n\n走法律：在澳洲告诽谤又贵又慢，那些群还都在境外，取证追责难如登天。但她可以请律师发函、向学校投诉张浩和李薇违纪、向平台举报那些假号、拿“开盒”去报警。\n\n靠家里：一个电话，爸爸就能调动法务和公关团队，甚至能让张浩家“懂事一点”，把这事压下去。干净利落，但她又一次成了那个被安排、被保护的女儿。\n\n或者，忍。清者自清，等风头过去。",
+      "choices": [
+        {
+          "id": "ch2c_law",
+          "text": "拿起法律武器 —— 律师函、投诉学校、举报假号、报警处理开盒",
+          "effects": {
+            "money": -2,
+            "skill": 2,
+            "mood": -1
+          },
+          "add_flags": [
+            "fought_back"
+          ],
+          "text_en": "Take up legal weapons — lawyer's letters, complain to the uni, report the fakes, police the doxxing"
+        },
+        {
+          "id": "ch2c_parents",
+          "text": "让爸爸用人脉和资源摆平 —— 有效，但她说不上来心里那点别扭",
+          "effects": {
+            "skill": -1,
+            "mood": -1
+          },
+          "add_flags": [
+            "parents_handled"
+          ],
+          "text_en": "Let Dad fix it with his connections and money — effective, but she can't name the unease"
+        },
+        {
+          "id": "ch2c_endure",
+          "text": "忍了，清者自清 —— 把自己缩起来，等所有人忘记",
+          "effects": {
+            "mood": -3
+          },
+          "add_flags": [
+            "endured_rumors"
+          ],
+          "text_en": "Endure it, the innocent clear themselves — curl up and wait for everyone to forget"
+        }
+      ],
+      "title_en": "Chapter 2 · Fighting Back",
+      "narrative_en": "She has to decide how to respond.\n\nGo legal: defamation in Australia is slow and expensive, and those groups are offshore — evidence and accountability are nearly impossible. But she can have a lawyer send letters, file a misconduct complaint with the university against Zhang Hao and Li Wei, report the fake accounts to the platforms, and take the doxxing to the police.\n\nLean on family: one call and her father can mobilise legal and PR teams, even make Zhang Hao's family “see sense” and bury it. Clean and quick — and once again she's the daughter being managed, protected.\n\nOr endure. The innocent clear themselves; wait it out."
+    },
+    {
+      "id": "ch3a_leave",
+      "title": "第三章 · 逃离",
+      "image": "chelsea_ch3a.png",
+      "narrative": "不管她怎么应对的，这个学期都是地狱。结束时，思琪整个人是空的——不是她以前小红书上那种精致的疲倦，而是尊严被公开碾碎、再一片片捡起来的那种深入骨头的累。\n\n她不想再看任何一个群聊、任何一条校园走廊、任何一个Darling Harbour的日落。\n\n她订了一张往外飞的机票。一个人。",
+      "choices": [
+        {
+          "id": "ch3a_solo",
+          "text": "一个人出发，谁也不告诉 —— 她需要一段没有人认识她的时间",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Leave alone, tell no one — she needs a stretch of time where no one knows her"
+        },
+        {
+          "id": "ch3a_wrapup",
+          "text": "先把学业的尾巴处理好再走 —— 再难，也不想烂尾",
+          "effects": {
+            "skill": 1
+          },
+          "add_flags": [],
+          "text_en": "Tie off the loose ends of her studies first — hard as it is, she won't leave a mess"
+        },
+        {
+          "id": "ch3a_wounded",
+          "text": "带着满身的伤上路 —— 逃，也是一种活下去的方式",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Hit the road carrying every wound — fleeing is also a way to survive"
+        }
+      ],
+      "title_en": "Chapter 3 · Escape",
+      "narrative_en": "However she handled it, the semester was hell. By the end Chelsea is hollowed out — not her old curated, photogenic exhaustion, but the bone-deep tiredness of having her dignity publicly crushed and picked back up piece by piece.\n\nShe can't look at another group chat, another campus corridor, another Darling Harbour sunset.\n\nShe books a ticket out of the bubble. Alone."
+    },
+    {
+      "id": "ch3b_road",
+      "title": "第三章 · 在路上",
+      "image": "chelsea_ch3b.png",
+      "bgm": "mood_hopeful.mp3",
+      "narrative": "墨尔本喝咖啡看街头涂鸦。大洋路十二门徒，天刚亮的时候。塔斯马尼亚摇篮山，雾里走路。乌鲁鲁的日落。圣灵群岛，蓝得不像真的海。\n\n她一个人去的。她不发了。第一次，她看到了悉尼气泡之外的澳洲——辽阔、安静、不认识她的名字，也不在乎她的谣言。\n\n在某条徒步小路上，或者某个小镇的咖啡馆里，有什么东西在她身体里慢慢回来了。",
+      "choices": [
+        {
+          "id": "ch3b_heal",
+          "text": "用旅行真正治愈自己 —— 慢游，写日记，不发社媒，让风景做它的事",
+          "effects": {
+            "mood": 3,
+            "money": -2
+          },
+          "add_flags": [
+            "deep_healing"
+          ],
+          "text_en": "Truly heal through travel — slow days, a journal, no social media; let the landscape do its work"
+        },
+        {
+          "id": "ch3b_business",
+          "text": "旅途中，商业脑子悄悄开机 —— 备忘录里记满了市场空白和点子",
+          "effects": {
+            "mood": 2,
+            "skill": 2,
+            "money": -1
+          },
+          "add_flags": [
+            "business_ideas"
+          ],
+          "text_en": "On the road, her business mind quietly switches on — notes full of market gaps and ideas"
+        },
+        {
+          "id": "ch3b_return",
+          "text": "旅行只是逃避，该回去面对了 —— 提前回悉尼，重新投入",
+          "effects": {
+            "mood": 1,
+            "skill": 1
+          },
+          "requirement": {
+            "mood": 4
+          },
+          "add_flags": [
+            "early_return"
+          ],
+          "text_en": "Travel's just running away; time to face it — head back to Sydney early, dive back in"
+        }
+      ],
+      "title_en": "Chapter 3 · On the Road",
+      "narrative_en": "Coffee and street art in Melbourne. The Twelve Apostles on the Great Ocean Road, just at first light. Cradle Mountain in Tasmania, walking through mist. Sunset at Uluru. The Whitsundays, a blue too bright to be real.\n\nShe went alone. She stopped posting. For the first time she sees the Australia beyond the Sydney bubble — vast, quiet, indifferent to her name, uninterested in her rumours.\n\nSomewhere on a walking track, or in a small-town café, something slowly comes back to life inside her."
+    },
+    {
+      "id": "ch3c_spark",
+      "title": "第三章 · 火花",
+      "image": "chelsea_ch3c.png",
+      "bgm": "mood_hopeful.mp3",
+      "narrative": "某个清晨，在一个她叫不出名字的小镇，思琪的脑子忽然全亮了。\n\n一个市场空白清晰起来：她的传媒和品牌直觉，加上她一路看到的东西——那些好东西藏在小镇里，没人会讲故事；那些想被华人市场看见的本地小品牌，找不到对的人。她能把这两端连起来，做一个品牌内容工作室，或者一个连接的平台。\n\n那个从小被当成“别人家招牌”的女孩，第一次想，自己亲手立一块招牌。\n\n这个念头，挥之不去。",
+      "choices": [
+        {
+          "id": "ch3c_plan",
+          "text": "把想法写成一份认真的商业计划 —— 不再只是发个朋友圈的冲动",
+          "effects": {
+            "skill": 2,
+            "mood": 1
+          },
+          "add_flags": [
+            "has_plan"
+          ],
+          "text_en": "Write the idea into a serious business plan — no longer just an impulse to post"
+        },
+        {
+          "id": "ch3c_doubt",
+          "text": "还在犹豫，这真的是我能做的吗 —— 她从没真正做成过什么",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Still hesitating — can she really do this? She's never truly built anything"
+        },
+        {
+          "id": "ch3c_later",
+          "text": "享受当下，想法先放一放 —— 难得喘口气，别又给自己上弦",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Enjoy the moment, set the idea aside — a rare breath, don't wind herself up again"
+        }
+      ],
+      "title_en": "Chapter 3 · The Spark",
+      "narrative_en": "One morning, in a town whose name she can't recall, Chelsea's mind suddenly lights up.\n\nA market gap sharpens: her media and brand instinct, plus what she's seen on the road — good things hidden in small towns, no one to tell their story; local brands wanting to reach Chinese consumers, unable to find the right person. She could connect the two ends — a brand-content studio, or a platform that bridges them.\n\nThe girl who was always “someone else's trophy” thinks, for the first time, of building a name of her own.\n\nThe idea won't let go."
+    },
+    {
+      "id": "ch4a_graduation",
+      "title": "第四章 · 毕业前",
+      "image": "chelsea_ch4a.png",
+      "narrative": "回到悉尼，思琪不一样了。Darling Harbour的公寓还是那个公寓，她不是那个她了。学位平平淡淡地读完了——成绩中等，没什么亮点，但她撑过来了。黄谣的声音变成了背景噪音。张浩被学校调查后转学去了墨尔本。小胜一场。\n\n现在：学生签有个到期日。爸打来电话：“回来吧，读完了，这边给你安排了几个相亲对象，条件都很好。” 妈妈发来照片：合适的青年才俊，合适的家庭。上海的机器等着把她吸回去。\n\n但她手机备忘录里还有那些笔记。一页又一页。",
+      "choices": [
+        {
+          "id": "ch4a_lean_startup",
+          "text": "认真考虑留下来创业 —— 第一次，她想为自己赌一把",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "leaning_startup"
+          ],
+          "text_en": "Seriously consider staying and starting up — for the first time, she wants to gamble on herself"
+        },
+        {
+          "id": "ch4a_lean_shanghai",
+          "text": "累了，回上海也许没那么糟 —— 至少不用再一个人扛",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "leaning_shanghai"
+          ],
+          "text_en": "Worn out, maybe Shanghai isn't so bad — at least she won't carry it all alone"
+        },
+        {
+          "id": "ch4a_lean_drift",
+          "text": "先拖着，享受悉尼，以后再说 —— 总是以后",
+          "effects": {
+            "visa": 1
+          },
+          "add_flags": [
+            "leaning_drift"
+          ],
+          "text_en": "Stall, enjoy Sydney, decide later — always later"
+        }
+      ],
+      "title_en": "Chapter 4 · Before Graduation",
+      "narrative_en": "Back in Sydney, Chelsea is different. The Darling Harbour apartment is the same apartment; she isn't the same her. The degree finished, plain — middling grades, nothing dazzling, but she made it through. The smear faded to background noise. After the university investigation, Zhang Hao transferred to Melbourne. A small win.\n\nNow: the student visa has an expiry date. Dad calls: “Come home, you've graduated. I've lined up some marriage candidates here, all good families.” Mum sends photos: suitable young men, suitable families. The Shanghai machine waits to pull her back.\n\nBut her phone still holds those notes. Page after page."
+    },
+    {
+      "id": "ch4b_test",
+      "title": "第四章 · 考验",
+      "image": "chelsea_ch4b.png",
+      "narrative": "一个看起来很靠谱的“创业伙伴”找上门——有人脉、会说话，开口就是“咱俩一起把这事做大”。可话里话外，他要她出家里的钱、用她的资源，主导权却得攥在自己手里。思琪太熟悉这种“为你好”的算计了——从小到大，多少人用这种语气，替她做了她的决定。\n\n她也可以干脆跟爸爸要一笔启动资金，省事，稳妥。但那又回到了那条老路：靠家里，做谁的女儿。\n\n这一次，她想看清楚，自己到底能不能站着把事做成。",
+      "choices": [
+        {
+          "id": "ch4b_selfmade",
+          "text": "拒绝那个伙伴，自己干、用自己的积蓄 —— 慢，但每一步都是她的",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "self_made"
+          ],
+          "text_en": "Turn the partner down, do it herself with her own savings — slow, but every step is hers"
+        },
+        {
+          "id": "ch4b_partner",
+          "text": "接受合伙/投资，图省事快 —— 她又一次把信任，交给了会说话的人",
+          "effects": {
+            "money": 1,
+            "mood": -1
+          },
+          "add_flags": [
+            "risky_partner"
+          ],
+          "text_en": "Take the partnership for speed — once again she hands her trust to a smooth talker"
+        },
+        {
+          "id": "ch4b_family",
+          "text": "跟爸爸要启动资金 —— 省心，但这就还是“爸爸的项目”",
+          "effects": {
+            "money": 2,
+            "mood": -1
+          },
+          "add_flags": [
+            "used_family_money"
+          ],
+          "text_en": "Ask Dad for startup money — easy, but then it's still “Dad's project”"
+        }
+      ],
+      "title_en": "Chapter 4 · The Test",
+      "narrative_en": "A seemingly reliable “co-founder” comes knocking — well-connected, smooth, opening with “let's build this big together.” But between the lines he wants her family's money and her network, with control kept in his hands. Chelsea knows this “for your own good” calculation too well — all her life, people have used that tone to make her decisions for her.\n\nShe could also just ask Dad for startup capital — easy, safe. But that's the old road again: leaning on family, being someone's daughter.\n\nThis time, she wants to see whether she can stand on her own and make something work."
+    },
+    {
+      "id": "ch4c_decision",
+      "title": "第四章 · 决定",
+      "image": "chelsea_ch4c.png",
+      "narrative": "学生签的到期日越来越近。上海那头，爸爸的安排、妈妈的相亲照、备好的公寓，都在等。手机备忘录里，那份商业计划也在等。\n\n她想起黑色落地窗里自己的倒影，想起摇篮山的雾，想起那个第一次为成绩之外的东西熬夜的晚上。\n\n她曾经是谁，和她差一点成为谁——就差这一个决定。",
+      "choices": [
+        {
+          "id": "ch4c_startup",
+          "text": "留下来，申请485，把那个想法做出来 —— 用自己的积蓄，立自己的招牌",
+          "effects": {
+            "visa": 2,
+            "skill": 2,
+            "mood": 2
+          },
+          "requirement": {
+            "skill": 5
+          },
+          "add_flags": [
+            "chose_startup"
+          ],
+          "text_en": "Stay, apply for the 485, build the idea — with her own savings, raise her own sign"
+        },
+        {
+          "id": "ch4c_shanghai",
+          "text": "回上海，接受家里的安排 —— 战斗结束了，累了，也许这样更省力",
+          "effects": {
+            "money": 2,
+            "mood": -2
+          },
+          "add_flags": [
+            "went_shanghai"
+          ],
+          "text_en": "Go back to Shanghai, accept the arrangement — the fight's over, she's tired; maybe this is easier"
+        },
+        {
+          "id": "ch4c_drift",
+          "text": "先拿个485，不做决定 —— 享受悉尼，以后再说",
+          "effects": {
+            "visa": 1,
+            "mood": -1
+          },
+          "add_flags": [
+            "drifting"
+          ],
+          "text_en": "Take a 485, make no decision — enjoy Sydney, decide later"
+        }
+      ],
+      "title_en": "Chapter 4 · The Decision",
+      "narrative_en": "The student visa's expiry creeps closer. In Shanghai: Dad's arrangements, Mum's marriage photos, an apartment ready and waiting. And on her phone, that business plan, also waiting.\n\nShe remembers her reflection in the black floor-to-ceiling window, the mist of Cradle Mountain, that first night she stayed up for something other than grades.\n\nWho she was, and who she nearly became — it comes down to this one decision."
+    }
+  ],
+  "endings": [
+    {
+      "id": "ending_own_name",
+      "title": "结局：她的名字",
+      "image": "chelsea_ending_name.png",
+      "bgm": "mood_hopeful.mp3",
+      "tier": "立身",
+      "verdict": "悉尼用了最糟的一年，才让你遇见你自己。",
+      "condition": {},
+      "flag_condition": {
+        "chose_startup": true
+      },
+      "text": "思琪在一个周二下午注册了公司。只有她一个人，一台笔记本电脑，一个ABN——和小敏用来送外卖的是同一种三字母缩写，但思琪不知道这件事。她们住在同一座城市，从未见过面。\n\n品牌从零开始。她在Darling Harbour的公寓里运营，自己做社交媒体（讽刺——被社交媒体毁过的女生，现在靠它创业）。第一个月赚了400。第二个月1200。不是爸爸的钱。是她的。\n\n一天晚上她在厨房台面上修产品图，在黑色落地窗里看到了自己的倒影——没化妆，头发随手扎着，身后是海港的灯光。她看起来不像谁家的女儿，也不像谁编的谣言。她看起来像她自己。\n\n悉尼用了她人生中最糟糕的一年，才让她遇见了这个人。",
+      "title_en": "Ending: Her Own Name",
+      "tier_en": "Standing",
+      "verdict_en": "Sydney spent its worst year to bring you face to face with yourself.",
+      "text_en": "On a Tuesday afternoon, Chelsea registered a company. Just her, one laptop, one ABN — the same three-letter acronym Fern uses to deliver food, though Chelsea doesn't know that. They live in the same city and have never met.\n\nThe brand starts from zero. She runs it from the Darling Harbour apartment, does her own social media (the irony — the girl ruined by social media now builds a business on it). The first month: $400. The second: $1,200. Not Dad's money. Hers.\n\nOne night, retouching a product shot on the kitchen counter, she catches her reflection in the black window — no makeup, hair tied up, the harbour lights behind her. She doesn't look like anyone's daughter, or like anyone's invented rumour. She looks like herself.\n\nSydney took the worst year of her life to introduce her to this person."
+    },
+    {
+      "id": "ending_cage",
+      "title": "结局：回笼",
+      "image": "chelsea_ending_cage.png",
+      "bgm": "mood_hollow.mp3",
+      "tier": "回笼",
+      "verdict": "不是坏的人生，只是不是你的。",
+      "condition": {},
+      "flag_condition": {
+        "went_shanghai": true
+      },
+      "text": "她飞回上海。头等舱——爸升了舱。公寓已经备好。妈安排了饭局：“很优秀的男生，家里做金融的。” 他给她开车门。礼貌、体面、合适。他没问澳洲的事。\n\n饭桌上，水晶杯和笑声之间，思琪适时地微笑。她很擅长这个。她一直很擅长这个。Darling Harbour的公寓会租出去。商业计划留在手机备忘录里，夹在摇篮山日落的截图和一张从未发过的照片之间。\n\n不是坏的人生。只是不是她的。",
+      "title_en": "Ending: Back in the Cage",
+      "tier_en": "Caged",
+      "verdict_en": "Not a bad life. Just not yours.",
+      "text_en": "She flew back to Shanghai. First class — Dad upgraded her. The apartment was ready. Mum arranged a dinner: “A very impressive young man, family's in finance.” He opened the car door for her. Polite, respectable, suitable. He didn't ask about Australia.\n\nAt the table, among crystal glasses and laughter, Chelsea smiles on cue. She's good at this. She's always been good at this. The Darling Harbour apartment will be rented out. The business plan stays in her phone's notes, tucked between a screenshot of a Cradle Mountain sunset and a photo she never posted.\n\nNot a bad life. Just not hers."
+    },
+    {
+      "id": "ending_suspended",
+      "title": "结局：悬浮",
+      "image": "chelsea_ending_suspended.png",
+      "bgm": "mood_drift.mp3",
+      "tier": "悬浮",
+      "verdict": "在两座城市之间，你悬着，谁也没成为。",
+      "condition": {},
+      "flag_condition": {},
+      "text": "思琪拿着485签证留在悉尼。她还住在Darling Harbour的公寓。还是会去好餐厅，但少了，而且开始真的在尝食物的味道了。她有时打开备忘录翻那些创业想法。有些天觉得可行。大部分时候觉得那是别人的梦。\n\n她不算不开心。也不算开心。她悬浮着——在上海和悉尼之间，在爸爸的世界和自己的世界之间，在她曾经是的那个女孩和她差一点成为的那个女人之间。\n\n485签证还有18个月。感觉够长了。也感觉什么都不是。",
+      "title_en": "Ending: Suspended",
+      "tier_en": "Suspended",
+      "verdict_en": "Between two cities, you hang in the air, becoming no one.",
+      "text_en": "Chelsea stayed in Sydney on a 485. She still lives in the Darling Harbour apartment. Still goes to nice restaurants, but less, and she's started actually tasting the food. Sometimes she opens her notes and scrolls the startup ideas. Some days they seem doable. Most days they feel like someone else's dream.\n\nShe isn't unhappy. She isn't happy. She's suspended — between Shanghai and Sydney, between her father's world and her own, between the girl she used to be and the woman she nearly became.\n\nThe 485 has eighteen months left. It feels like enough. It also feels like nothing at all."
+    }
+  ]
+}

@@ -1,0 +1,620 @@
+{
+  "character": "kevin",
+  "bgm": "kevin_play.mp3",
+  "scenes": [
+    {
+      "id": "ch1a_yumcha",
+      "title": "第一章 · 饮茶",
+      "image": "kevin_ch1a.png",
+      "narrative": "周日早上，阿杰在华叔的餐厅吃早茶——每周固定的家族聚会。大圆桌上坐着华叔、表哥、几个叔伯和七七八八的亲戚，一边递碟子一边聊生意。\n\n表哥在吹他怎么把一辆Camry多卖了三千块：“那个印度哥们根本不懂车，我跟他说这车一手车主、保养记录齐全，他信了。” 所有人都笑了。华叔没笑，只是倒茶。\n\n阿杰坐在那里吃叉烧包，半听着。华叔身后墙上挂着一张泛黄的老照片：七十年代，六个年轻人站在奥克兰一家小店门口，瘦，严肃。华叔看到他盯着那张照片，轻声说：“你爷爷那辈人，从汕头坐船到南洋，死了一半。活下来的，什么都肯干。到你这一代，什么都不用干了。”\n\n不是指责。是陈述。这句话像一块石头落在阿杰胸口。",
+      "choices": [
+        {
+          "id": "ch1a_shrug",
+          "text": "华叔说得对，但跟我有什么关系 —— 爷爷的故事是爷爷的",
+          "effects": {},
+          "add_flags": [],
+          "text_en": "Uncle Hua's right, but what's it got to do with me — Grandpa's story is Grandpa's"
+        },
+        {
+          "id": "ch1a_think",
+          "text": "那张老照片让他想了很久 —— 心里某个地方被碰了一下",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [
+            "touched"
+          ],
+          "text_en": "That old photo stays with him a long time — something inside gets touched"
+        },
+        {
+          "id": "ch1a_cousin",
+          "text": "表哥倒是活得明白 —— 也许该跟他混混",
+          "effects": {
+            "money": 1
+          },
+          "add_flags": [
+            "grey_start"
+          ],
+          "text_en": "His cousin's got it figured out — maybe he should hang around him"
+        }
+      ],
+      "title_en": "Chapter 1 · Yum Cha",
+      "narrative_en": "Sunday morning, Kevin is at Uncle Hua's restaurant for yum cha — the standing weekly family gathering. Uncle Hua, his cousin, a few uncles and assorted relatives crowd the big round table, passing dishes and talking business.\n\nHis cousin is bragging about flipping a Camry for three grand over: “The Indian guy had no clue about cars — I told him one owner, full service history, and he believed me.” Everyone laughs. Uncle Hua doesn't; he just pours tea.\n\nKevin sits eating a char siu bao, half-listening. On the wall behind Uncle Hua hangs a yellowed old photo: the 1970s, six young people outside a small shop in Auckland, thin, serious. Uncle Hua catches him staring and says quietly: “Your grandfather's generation — they sailed from Shantou to the South Seas. Half of them died. The ones who lived would do anything. By your generation, you don't have to do anything at all.”\n\nNot an accusation. A statement. The words land in his chest like a stone."
+    },
+    {
+      "id": "ch1b_stone",
+      "title": "第一章 · 那块石头",
+      "image": "kevin_ch1b.png",
+      "narrative": "回到家，开机，打了三局Valorant。石头还在。\n\n接下来的一周和过去无数周一样模糊：周一的课睡过了，周二去了一半，周三和朋友打球，周四在Burwood吃了顿饭，周五又是通宵。但每次屏幕暗下来的那一秒，他都会想起华叔那句话，和照片里六个瘦削、严肃的年轻人。\n\n室友路过他房间，看了眼他堆着的没拆的快递和没洗的碗：“哥，你这学期到底修了几门啊？” 阿杰愣了一下，发现自己答不上来。",
+      "choices": [
+        {
+          "id": "ch1b_uncle",
+          "text": "去华叔店里周末帮工 —— 不为钱，就想离那张照片近一点",
+          "effects": {
+            "skill": 1
+          },
+          "add_flags": [
+            "helping_uncle"
+          ],
+          "text_en": "Help out at Uncle Hua's on weekends — not for money, just to be near that photo"
+        },
+        {
+          "id": "ch1b_cousin",
+          "text": "给表哥发消息 —— 哥，你那车行还缺人不？",
+          "effects": {
+            "money": 1
+          },
+          "add_flags": [
+            "grey_start"
+          ],
+          "text_en": "Message his cousin — hey, your car yard still need a hand?"
+        },
+        {
+          "id": "ch1b_nothing",
+          "text": "谁也不联系，继续打游戏 —— 石头嘛，习惯了就不重了",
+          "effects": {
+            "skill": -1,
+            "mood": -1
+          },
+          "add_flags": [
+            "isolation"
+          ],
+          "text_en": "Contact no one, keep gaming — the stone? you get used to the weight"
+        }
+      ],
+      "title_en": "Chapter 1 · The Stone",
+      "narrative_en": "Back home, boot up, three rounds of Valorant. The stone is still there.\n\nThe week that follows blurs like countless others: slept through Monday's class, made half of Tuesday's, basketball Wednesday, a meal in Burwood Thursday, an all-nighter Friday. But the second the screen dims, he remembers Uncle Hua's words, and the six thin, serious young people in that photo.\n\nHis roommate passes his door, glances at the unopened parcels and dirty bowls: “Bro, how many courses are you even enrolled in this semester?” Kevin blanks, and realises he can't answer."
+    },
+    {
+      "id": "ch1c_saturday",
+      "title": "第一章 · 周六",
+      "image": "kevin_ch1c.png",
+      "narrative": "一个周六，阿杰第一次真正看见了两个世界。\n\n在华叔的后厨，备菜有种奇怪的安静：切葱、码料、把高汤的火候盯到刚好。华叔不夸人，但会在你做对的时候点一下头。汗水、油烟、出餐铃，一切都在动，而他居然不觉得累。\n\n在表哥的车行，他看着表哥跟一个刚来的WHV小子谈一辆刚洗过、锃亮的二手车。表哥拍着方向盘：“一手车主，里程才十二万，保养记录齐全。” 小子英语不好，攥着两千块现金，眼里全是信任。阿杰瞄了一眼仪表盘——这车的磨损，看着可不像只跑了十二万。表哥转头冲他挤了挤眼。\n\n两个画面，他都在场。他得选一个待下去。",
+      "choices": [
+        {
+          "id": "ch1c_kitchen",
+          "text": "在华叔后厨待了一整天 —— 累，但踏实",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "helping_uncle"
+          ],
+          "text_en": "Spend the whole day in Uncle Hua's kitchen — tiring, but grounding"
+        },
+        {
+          "id": "ch1c_caryard",
+          "text": "留在车行帮表哥拍车、发帖 —— 钱来得是真快",
+          "effects": {
+            "money": 1,
+            "mood": -1
+          },
+          "add_flags": [
+            "grey_deeper"
+          ],
+          "text_en": "Stay at the yard, shoot photos and post listings for his cousin — the money comes fast"
+        },
+        {
+          "id": "ch1c_leave",
+          "text": "中途溜了，回家睡觉 —— 哪个都懒得选",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Slip off halfway, go home and sleep — can't be bothered with either"
+        }
+      ],
+      "title_en": "Chapter 1 · Saturday",
+      "narrative_en": "One Saturday, Kevin really sees both worlds for the first time.\n\nIn Uncle Hua's kitchen there's a strange calm in the prep: chopping scallions, laying out ingredients, watching the broth to exactly the right heat. Uncle Hua doesn't praise, but nods once when you get it right. Sweat, oil-smoke, the order bell — everything in motion, and somehow he isn't tired.\n\nAt his cousin's car yard, he watches him sweet-talk a fresh-off-the-plane WHV kid over a freshly-washed, gleaming used car: “One owner, only 120,000 km, full service history.” The kid's English is poor, clutching two grand in cash, eyes full of trust. Kevin glances at the odometer — the wear doesn't look like 120,000 km. His cousin shoots him a wink.\n\nTwo scenes, and he's in both. He has to pick one to stay in."
+    },
+    {
+      "id": "ch2a_drifting",
+      "title": "第二章 · 混日子",
+      "image": "kevin_ch2a.png",
+      "narrative": "学期继续。阿杰去了大概六成的课。他够聪明，不用努力也能过——这恰恰是问题所在。没有紧迫感，没有后果，没有摩擦。\n\n手机不停地响，但都是灰色地带。表哥让他帮忙：给车拍“氛围感大片”、写五星好评、在Gumtree和Marketplace发帖——帖子里只字不提事故和真实里程。叔公做移民中介，问他同学里有没有人要“包过的签证方案”——假流水、假工作证明，甚至能“安排”雇主担保。没一件直接算他犯法，但也没一件让他心安。\n\n同时，华叔的餐厅不太好。房租涨了，几个员工走了，华叔太讲原则不肯放味精、不肯用冻货。饮茶时他随口提了一嘴，像没当回事。但阿杰注意到那张墙上的老照片换了新相框。有人在乎着。",
+      "choices": [
+        {
+          "id": "ch2a_grey",
+          "text": "帮表哥拍车、写好评、发帖 —— 钱好赚，可那些帖子他自己都不敢信",
+          "effects": {
+            "money": 2,
+            "mood": -1
+          },
+          "add_flags": [
+            "grey_deeper"
+          ],
+          "text_en": "Shoot cars, write reviews, post listings for his cousin — easy money, but he doesn't believe his own posts"
+        },
+        {
+          "id": "ch2a_uncle",
+          "text": "去华叔店里学后厨 —— 不要钱，洗碗端盘，看一家店怎么转",
+          "effects": {
+            "skill": 2,
+            "mood": 1
+          },
+          "add_flags": [
+            "helping_uncle"
+          ],
+          "text_en": "Help at Uncle Hua's, learn the kitchen — no pay, dishes and tables, watch a place run"
+        },
+        {
+          "id": "ch2a_nothing",
+          "text": "都不想沾，自己待着 —— 安全，舒适，什么都没发生",
+          "effects": {
+            "skill": -1,
+            "mood": -1
+          },
+          "add_flags": [
+            "isolation"
+          ],
+          "text_en": "Touch none of it, keep to himself — safe, comfortable, nothing happens"
+        }
+      ],
+      "title_en": "Chapter 2 · Drifting",
+      "narrative_en": "The semester rolls on. Kevin makes about 60% of his classes. He's smart enough to pass without trying — which is exactly the problem. No urgency, no consequences, no friction.\n\nHis phone keeps buzzing, all of it grey-zone. His cousin wants him to shoot “mood-lit” photos of cars, write five-star reviews, post listings on Gumtree and Marketplace that say nothing about accidents or real mileage. His grand-uncle, a migration agent, asks if any classmates want a “guaranteed visa package” — fake bank statements, fake employment letters, even arranged sponsorship. None of it is directly his crime, but none of it sits right.\n\nMeanwhile Uncle Hua's restaurant is struggling. Rent's up, staff have left, and he's too principled to use MSG or frozen stock. He mentions it offhand over yum cha, like it's nothing. But Kevin notices the old photo on the wall is in a new frame. Someone cares."
+    },
+    {
+      "id": "ch2b_rent",
+      "title": "第二章 · 房租",
+      "image": "kevin_ch2b.png",
+      "narrative": "一个收档的晚上，店里只剩华叔和阿杰。华叔一边擦桌子一边算账，算着算着停了下来。\n\n“房东说明年租金再涨百分之十五。” 他说得很平静，像在说天气，“阿珍和阿强上个月走了，去了人家给现金的店。我这边……不肯放味精，不肯用冻货，成本压不下来。”\n\n阿杰第一次认真看这家店：褪色的菜单，二十年没换的炒锅，连个像样的招牌灯都没有，更别说外卖平台和社交媒体了。华叔顺着他的目光看过去，没说话。\n\n他忽然意识到，这不只是一家快要撑不住的小餐馆。这是华叔的整个后半生。",
+      "choices": [
+        {
+          "id": "ch2b_digital",
+          "text": "我来帮你搞线上 —— 上Uber Eats、做小红书，这个我比你懂",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "restaurant_interest"
+          ],
+          "text_en": "Let me run your online stuff — Uber Eats, Xiaohongshu; I know this better than you"
+        },
+        {
+          "id": "ch2b_lend",
+          "text": "把攒的零花钱借给华叔周转 —— 不多，但是心意",
+          "effects": {
+            "money": -2,
+            "mood": 1
+          },
+          "add_flags": [],
+          "text_en": "Lend Uncle Hua his pocket money to tide things over — not much, but it's heart"
+        },
+        {
+          "id": "ch2b_stayout",
+          "text": "这店迟早要关，何必淌这趟浑水 —— 嘴上应着，心里算了",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "This place is doomed, why wade in — says yes out loud, writes it off inside"
+        }
+      ],
+      "title_en": "Chapter 2 · The Rent",
+      "narrative_en": "One night after close, it's just Uncle Hua and Kevin. Uncle Hua wipes tables and does the books, then stops mid-sum.\n\n“Landlord says rent's up another fifteen percent next year.” He says it flat, like weather. “Ah Zhen and Ah Qiang left last month for a place that pays cash. Me — I won't use MSG, won't use frozen stock, can't get the costs down.”\n\nKevin really looks at the place for the first time: faded menu, a wok twenty years old, not even a decent sign, let alone delivery apps or social media. Uncle Hua follows his gaze, says nothing.\n\nIt hits him: this isn't just a small restaurant about to fold. It's the whole back half of Uncle Hua's life."
+    },
+    {
+      "id": "ch2c_weight",
+      "title": "第二章 · 灰色的重量",
+      "image": "kevin_ch2c.png",
+      "narrative": "半个学期下来，阿杰开始掂量出每条路的重量。\n\n灰色的钱是真的容易。但有一次，他亲眼看着一个刚下飞机的女生，用半年的积蓄买走了一辆表哥的车。后来他才知道：那车里程从28万调到了12万，是辆喷漆翻新过的事故车，更要命的是——车子还在按揭，过户之后随时可能被金融公司拖走。女生当时还笑着说谢谢。那天晚上他没睡好。\n\n后厨是另一种重量。晚高峰跑顺的时候，出餐、收单、翻炒，整个厨房像一台精密的机器，而他是其中转动的一环。累得腰酸，却有种说不出的踏实。\n\n两种重量，他得习惯其中一种。",
+      "choices": [
+        {
+          "id": "ch2c_grey",
+          "text": "钱是真香，继续跟表哥混 —— 良心这东西，慢慢就麻了",
+          "effects": {
+            "money": 2,
+            "mood": -2
+          },
+          "add_flags": [
+            "grey_deeper"
+          ],
+          "text_en": "Money's good, stick with his cousin — your conscience numbs, eventually"
+        },
+        {
+          "id": "ch2c_kitchen",
+          "text": "还是后厨踏实，留下来 —— 累，但晚上睡得着",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "helping_uncle"
+          ],
+          "text_en": "The kitchen feels real, stay — tiring, but he sleeps at night"
+        },
+        {
+          "id": "ch2c_retreat",
+          "text": "两边都累，回去打游戏 —— 不选，也是一种选",
+          "effects": {
+            "skill": -1,
+            "mood": -1
+          },
+          "add_flags": [
+            "isolation"
+          ],
+          "text_en": "Worn out by both, back to gaming — not choosing is also a choice"
+        }
+      ],
+      "title_en": "Chapter 2 · The Weight of Grey",
+      "narrative_en": "Half a semester in, Kevin starts to feel the weight of each road.\n\nThe grey money really is easy. But once, he watches a girl just off the plane buy a car from his cousin with half a year's savings. Later he learns: the odometer was rolled from 280,000 km to 120,000, it's a re-sprayed accident car, and worse — it still has finance owing, so the lender could repossess it any day after transfer. She smiled and said thank you. He didn't sleep that night.\n\nThe kitchen is a different weight. When the dinner rush flows, plating, taking orders, working the wok — the whole kitchen is one precise machine, and he's a moving part in it. His back aches, but there's a steadiness he can't name.\n\nTwo weights. He has to get used to one of them."
+    },
+    {
+      "id": "ch3a_incident",
+      "title": "第三章 · 出事了",
+      "image": "kevin_ch3a.png",
+      "narrative": "半年了。灰色地带不再只是背景噪音——它在拽他，或者在推他。\n\n表哥车行出事了。那个买车的WHV女生，车开了两个月就被金融公司上门拖走——原车主的贷款根本没还清。她找人查了车架号，调表和事故记录全爆出来。她在小红书发了篇长帖，截图、单据、对话一应俱全：“悉尼黑心二手车，避雷！” 一夜之间转了几千。Fair Trading介入调查。\n\n表哥的电话一个接一个地打来，语气从嬉皮笑脸变成了急。“兄弟，没事，小事，” 他说，但声音里有阿杰从没听过的东西。\n\n那个被拖走车的女生，阿杰其实记得——上个月在车行见过，攥着现金，笑着说谢谢的那个。",
+      "choices": [
+        {
+          "id": "ch3a_listen",
+          "text": "先听表哥怎么说 —— 毕竟是家人",
+          "effects": {},
+          "add_flags": [],
+          "text_en": "Hear his cousin out first — family, after all"
+        },
+        {
+          "id": "ch3a_help",
+          "text": "私下提醒那女生去Fair Trading维权、保留证据 —— 哪怕表哥会恨他",
+          "effects": {
+            "money": -1,
+            "mood": 1
+          },
+          "add_flags": [
+            "conscience"
+          ],
+          "text_en": "Quietly warn the girl to take it to Fair Trading, keep her evidence — even if his cousin hates him for it"
+        },
+        {
+          "id": "ch3a_ignore",
+          "text": "装没看见，专心搞别的 —— 这事跟我没关系",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [],
+          "text_en": "Pretend he saw nothing, focus elsewhere — none of his business"
+        }
+      ],
+      "title_en": "Chapter 3 · It Blows Up",
+      "narrative_en": "Half a year. The grey zone isn't background noise anymore — it's pulling him, or pushing him.\n\nHis cousin's yard blows up. The WHV girl's car was repossessed by the finance company two months in — the previous owner's loan was never cleared. She had the VIN checked: the rolled odometer and accident history all came out. She posted a long thread on Xiaohongshu with screenshots, receipts, the lot: “Sydney's dodgy used-car dealers — stay away!” Thousands of shares overnight. Fair Trading opens an investigation.\n\nHis cousin's calls come one after another, the tone sliding from cocky to panicked. “Bro, it's nothing, small stuff,” he says, but there's something in his voice Kevin has never heard.\n\nThe girl whose car got towed — Kevin remembers her. The one at the yard last month, clutching cash, smiling thank you."
+    },
+    {
+      "id": "ch3b_line",
+      "title": "第三章 · 那条线",
+      "image": "kevin_ch3b.png",
+      "bgm": "mood_cold.mp3",
+      "narrative": "表哥终于摊牌了，两件事：\n\n“第一，你发的那些帖子、那些五星好评，全删了，聊天记录也清一清。” ——销毁证据。\n\n“第二，” 他压低声音，“下一批车，挂你名下过户。你是学生，征信干净，查不到我头上。出了事……也好周转。” ——让阿杰当挂名的车主、背锅的人。这一步迈过去，他在法律上就再也摘不干净了。\n\n而在城市的另一头，华叔的餐厅因为他上了外卖、做了小红书，正慢慢缓过来。他喜欢上了那种把一家店一点点盘活的感觉。华叔说，要不要干脆接手，认真翻盘——上线上、改菜单、重新装修，做成一家真正的店。\n\n两个声音在他脑子里同时响着。一个说：他是你哥。另一个说：你还记得那个女生的笑吗。",
+      "choices": [
+        {
+          "id": "ch3b_cross",
+          "text": "帮表哥删帖、挂名过户 —— 越线了。但他是家人，对吧？",
+          "effects": {
+            "money": 1,
+            "mood": -3
+          },
+          "add_flags": [
+            "crossed_line"
+          ],
+          "text_en": "Delete the posts and register the cars for his cousin — crossing the line. But he's family, right?"
+        },
+        {
+          "id": "ch3b_refuse",
+          "text": "拒绝表哥，划清界限 —— “你以为你多干净？” 表哥翻脸了",
+          "effects": {
+            "money": -1,
+            "mood": 2
+          },
+          "add_flags": [
+            "integrity"
+          ],
+          "text_en": "Refuse his cousin, draw the line — “You think you're so clean?” His cousin turns on him"
+        },
+        {
+          "id": "ch3b_restaurant",
+          "text": "接手华叔的店，认真翻盘 —— 上外卖、做社媒、改菜单",
+          "effects": {
+            "skill": 2,
+            "mood": 2
+          },
+          "requirement": {
+            "skill": 4
+          },
+          "add_flags": [
+            "restaurant_project"
+          ],
+          "text_en": "Take over Uncle Hua's place, do a real turnaround — delivery, social media, new menu"
+        }
+      ],
+      "title_en": "Chapter 3 · The Line",
+      "narrative_en": "His cousin finally lays it out. Two things:\n\n“One, delete all those posts and five-star reviews you put up, and clean out the chat logs.” — destroying evidence.\n\n“Two,” he drops his voice, “the next batch of cars, register them in your name. You're a student, clean record, can't be traced to me. And if anything goes wrong… easier to handle.” — making Kevin the registered owner, the fall guy. Step over this line and he's legally tangled in it for good.\n\nMeanwhile, across town, Uncle Hua's restaurant is slowly recovering — because of the delivery apps and Xiaohongshu Kevin set up. He's grown to love the feeling of nursing a place back to life. Uncle Hua asks: why not take it over properly, do a real turnaround — online, new menu, a renovation, make it a real restaurant.\n\nTwo voices in his head at once. One says: he's your family. The other says: remember the way that girl smiled?"
+    },
+    {
+      "id": "ch3c_temptation",
+      "title": "第三章 · 回国的诱惑",
+      "image": "kevin_ch3c.png",
+      "narrative": "那是糟糕的一周。一门课的作业忘交了，拿到了学术警告。室友搬走了，房间一下子空了，安静得能听见冰箱的嗡嗡声。\n\n半夜，阿杰打开了一个广州的租房页面。一居室，2000人民币一个月，旁边就是网吧。他越看越觉得诱人：他是NZ公民，中文够用，回去谁也不认识他，没人问他这学期修了几门，没有华叔，没有表哥，没有那张照片。\n\n屏幕的光打在他脸上。一个声音在说：你本来就什么都不欠，凭什么非要在这儿熬。",
+      "choices": [
+        {
+          "id": "ch3c_escape",
+          "text": "越想越觉得回国香 —— 广州，便宜房子，打游戏，无人认识",
+          "effects": {
+            "mood": 1,
+            "skill": -1
+          },
+          "add_flags": [
+            "china_escape"
+          ],
+          "text_en": "The more he thinks, the better home sounds — Guangzhou, cheap rent, gaming, no one knows him"
+        },
+        {
+          "id": "ch3c_build",
+          "text": "还是想在这儿做出点什么 —— 哪怕只是一家小店",
+          "effects": {
+            "skill": 1
+          },
+          "requirement": {
+            "skill": 4
+          },
+          "add_flags": [
+            "wants_to_build"
+          ],
+          "text_en": "He still wants to make something here — even just one small shop"
+        },
+        {
+          "id": "ch3c_delay",
+          "text": "不知道，先拖着 —— 关掉页面，又打开，又关掉",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "drift_tendency"
+          ],
+          "text_en": "Doesn't know, just stalls — closes the page, opens it, closes it again"
+        }
+      ],
+      "title_en": "Chapter 3 · The Pull of Home",
+      "narrative_en": "It was a bad week. Forgot to submit one assignment, got an academic warning. His roommate moved out, the room suddenly empty, quiet enough to hear the fridge hum.\n\nLate at night, Kevin opens a Guangzhou rental page. One-bedroom, 2,000 RMB a month, an internet café right next door. The more he looks, the more it tempts him: he's an NZ citizen, his Chinese is fine, no one back there knows him, no one asks how many courses he's taking, no Uncle Hua, no cousin, no photo.\n\nThe screen glows on his face. A voice says: you never owed anyone anything — why grind it out here?"
+    },
+    {
+      "id": "ch4a_passports",
+      "title": "第四章 · 两本护照",
+      "image": "kevin_ch4a.png",
+      "narrative": "学年快结束了。桌上摆着：新西兰护照（深蓝色，银蕨叶），澳洲学生证，手机开着那个广州的租房页面。手机上还有一条华叔发来的消息：“这个月营业额比去年同期涨了40%，你做的那些有用。”\n\n他可以申请澳洲国籍——作为NZ公民住满时间，基本铁板钉钉。然后他会有两本护照：NZ和澳洲。绝对的自由。去哪都行，做什么都行。\n\n或者——脑子里最大声的那个声音说——什么都不做，在哪都行。\n\n而餐厅刚有点起色，但要真正翻盘，得花一大笔钱重新装修，这意味着真金白银的风险。\n\n这是他爷爷那辈人从没有资格问的问题：当你可以去任何地方的时候，你到底想在哪？",
+      "choices": [
+        {
+          "id": "ch4a_lean_build",
+          "text": "认真考虑留下来，把餐厅做大 —— 第一次为某件事认真",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "add_flags": [
+            "leaning_build"
+          ],
+          "text_en": "Seriously consider staying, growing the restaurant — for the first time, he cares about something"
+        },
+        {
+          "id": "ch4a_lean_flat",
+          "text": "越来越想回国躺平 —— 自由的尽头是什么都不做",
+          "effects": {
+            "mood": 1
+          },
+          "add_flags": [
+            "leaning_lieflat"
+          ],
+          "text_en": "More and more he wants to go home and lie flat — freedom's end is doing nothing"
+        },
+        {
+          "id": "ch4a_lean_grey",
+          "text": "跟表哥那边还藕断丝连 —— 钱的味道很难戒",
+          "effects": {
+            "money": 1,
+            "mood": -1
+          },
+          "add_flags": [
+            "leaning_grey"
+          ],
+          "text_en": "Still tangled with his cousin's world — the taste of easy money is hard to quit"
+        }
+      ],
+      "title_en": "Chapter 4 · Two Passports",
+      "narrative_en": "The school year is nearly over. On the desk: a New Zealand passport (deep blue, silver fern), an Australian student ID, his phone open to that Guangzhou rental page. And a message from Uncle Hua: “Revenue's up 40% on this time last year — what you did worked.”\n\nHe could apply for Australian citizenship — as an NZ citizen who's lived here long enough, basically a lock. Then he'd have two passports: NZ and Australian. Absolute freedom. Go anywhere, do anything.\n\nOr — the loudest voice in his head says — do nothing, anywhere.\n\nAnd the restaurant is just turning a corner, but a real turnaround needs a big renovation spend, which means real money and real risk.\n\nIt's the question his grandfather's generation never had the right to ask: when you can go anywhere, where do you actually want to be?"
+    },
+    {
+      "id": "ch4b_financing",
+      "title": "第四章 · 找钱",
+      "image": "kevin_ch4b.png",
+      "narrative": "华叔约他喝茶。不是家族聚会，就他们两个。\n\n华叔倒了茶，沉默了很久，才开口：“店要是你愿意，可以算你一份。不是打工，是合伙。” 他看着墙上那张老照片，“我老了。这店，总得有人接。”\n\n阿杰心里清楚，合伙是一回事，真把店盘活是另一回事。装修、设备、招牌、再撑半年的现金流——都要钱。他在脑子里盘算那几条路：拿一份正经的business plan去银行申请小企业贷款（难批，但干净、是自己的）；或者拉个投资人入股（钱快，但得让出股份和话语权）；又或者掏空自己的积蓄，慢慢死磕。\n\n华叔看着他：“你不用现在答。但你得知道你自己想要什么。”",
+      "choices": [
+        {
+          "id": "ch4b_loan",
+          "text": "做正经business plan，去银行申请小企业贷款 —— 难，但这店就真是自己的",
+          "effects": {
+            "skill": 1,
+            "mood": 1
+          },
+          "requirement": {
+            "skill": 5
+          },
+          "add_flags": [
+            "committed"
+          ],
+          "text_en": "Write a real business plan, apply for a small-business loan — hard, but then the place is truly his"
+        },
+        {
+          "id": "ch4b_investor",
+          "text": "拉个投资人入股 —— 钱来得快，但得让出一部分话语权",
+          "effects": {
+            "money": 1,
+            "mood": -1
+          },
+          "add_flags": [
+            "committed"
+          ],
+          "text_en": "Bring in an investor — money comes fast, but he gives up some control"
+        },
+        {
+          "id": "ch4b_vague",
+          "text": "含糊其辞，没给答复 —— “我再想想” 又一次",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "drift_tendency"
+          ],
+          "text_en": "Hedges, gives no answer — “let me think about it,” again"
+        }
+      ],
+      "title_en": "Chapter 4 · Finding the Money",
+      "narrative_en": "Uncle Hua invites him for tea. Not a family gathering — just the two of them.\n\nUncle Hua pours, sits in silence a long while, then: “If you're willing, the place can be part yours. Not employment — a partnership.” He looks at the old photo on the wall. “I'm getting old. Someone has to carry this on.”\n\nKevin knows a partnership is one thing; actually reviving the place is another. Renovation, equipment, a sign, cash flow for another half year — all money. He runs the options in his head: take a proper business plan to the bank for a small-business loan (hard to get, but clean, and his own); or bring in an investor (fast money, but he'd give up equity and control); or sink his own savings and grind it out slowly.\n\nUncle Hua watches him. “You don't have to answer now. But you have to know what you want.”"
+    },
+    {
+      "id": "ch4c_decision",
+      "title": "第四章 · 决定",
+      "image": "kevin_ch4c.png",
+      "narrative": "所有的路都铺到了脚下。该选了。\n\n两本护照，一个合伙的offer，一笔要么贷要么拉投资的装修钱，一个广州的房间，一张三代人的照片。没有人再能替他往后拖。\n\n他想起华叔那句话：你得知道你自己想要什么。",
+      "choices": [
+        {
+          "id": "ch4c_build",
+          "text": "留下来，把华叔的餐厅做成自己的事业 —— 在最不可能的地方找到了在乎的事",
+          "effects": {
+            "skill": 2,
+            "mood": 2,
+            "money": 1
+          },
+          "requirement": {
+            "skill": 5,
+            "mood": 4
+          },
+          "add_flags": [
+            "chose_restaurant"
+          ],
+          "text_en": "Stay, make Uncle Hua's restaurant his own — found something to care about in the unlikeliest place"
+        },
+        {
+          "id": "ch4c_lieflat",
+          "text": "拿了澳洲国籍，回国躺平 —— 广州小公寓，打游戏，无压力",
+          "effects": {},
+          "add_flags": [
+            "chose_lieflat"
+          ],
+          "text_en": "Take Australian citizenship, go home and lie flat — a Guangzhou flat, gaming, no pressure"
+        },
+        {
+          "id": "ch4c_grey",
+          "text": "跟着灰色圈子继续混 —— 钱容易来，别的就别想了",
+          "effects": {
+            "money": 3,
+            "mood": -2
+          },
+          "add_flags": [
+            "chose_grey"
+          ],
+          "text_en": "Keep running with the grey crowd — easy money, forget the rest"
+        },
+        {
+          "id": "ch4c_loop",
+          "text": "不知道，真的不知道 —— 再报一学期吧。又一年。又一个循环",
+          "effects": {
+            "mood": -1
+          },
+          "add_flags": [
+            "chose_loop"
+          ],
+          "text_en": "Don't know, really don't — enrol another semester. Another year. Another loop"
+        }
+      ],
+      "title_en": "Chapter 4 · The Decision",
+      "narrative_en": "Every road is laid at his feet now. Time to choose.\n\nTwo passports, a partnership offer, a renovation to be loaned or invested, a room in Guangzhou, a photo of three generations. No one can let him stall any longer.\n\nHe thinks of Uncle Hua's words: you have to know what you want."
+    }
+  ],
+  "endings": [
+    {
+      "id": "ending_build",
+      "title": "结局：立业",
+      "image": "kevin_ending_build.png",
+      "bgm": "mood_hopeful.mp3",
+      "tier": "圆满",
+      "verdict": "三代人的漂泊，在你这里，落了地。",
+      "condition": {},
+      "flag_condition": {
+        "chose_restaurant": true
+      },
+      "text": "阿杰申请了澳洲国籍。三个月后批了——在Town Hall参加了个仪式，拿了张证书，波澜不惊。他没觉得有什么不同。但他留下来了。\n\n贷款批下来那天，他和华叔在空荡荡的店里站了很久。翻新不是大装修——刷了漆，换了灯，做了个阿杰自己设计的logo。上线了Uber Eats和DoorDash，加了午市套餐和周末brunch，重新拍了菜单。他运营的小红书号涨到5000粉，一个美食博主来写了篇测评。周五晚上开始要排队了。\n\n华叔在墙上挂了第二张照片，紧挨着爷爷那张：阿杰和华叔站在翻新那天的店门口，衣服上沾着油漆，笑着。三代人，不同的厨房，同一个故事。\n\n饮茶时表哥问“你那小饭馆能赚几个钱”，阿杰笑笑，倒了杯茶。这招他从华叔那里学的。",
+      "title_en": "Ending: Building Something",
+      "tier_en": "Fulfilled",
+      "verdict_en": "Three generations adrift, and with you, it finally lands.",
+      "text_en": "Kevin applied for Australian citizenship. It came through three months later — a ceremony at Town Hall, a certificate, nothing dramatic. He didn't feel different. But he stayed.\n\nThe day the loan came through, he and Uncle Hua stood in the empty restaurant a long time. The renovation wasn't grand — fresh paint, new lighting, a logo Kevin designed himself. They went live on Uber Eats and DoorDash, added lunch sets and weekend brunch, reshot the menu. His Xiaohongshu account hit 5,000 followers; a food blogger wrote a review. Friday nights started to queue.\n\nUncle Hua hung a second photo on the wall, right next to Grandpa's: Kevin and Uncle Hua at the doorway on renovation day, paint on their clothes, smiling. Three generations, different kitchens, the same story.\n\nAt yum cha his cousin asks, “How much can that little diner of yours even make?” Kevin just smiles and pours the tea. He learned that one from Uncle Hua."
+    },
+    {
+      "id": "ending_lieflat",
+      "title": "结局：躺平",
+      "image": "kevin_ending_lieflat.png",
+      "bgm": "mood_hollow.mp3",
+      "tier": "虚无",
+      "verdict": "你拥有去任何地方的自由，却哪儿也没去。",
+      "condition": {},
+      "flag_condition": {
+        "chose_lieflat": true
+      },
+      "text": "广州，十二楼的一居室。窗帘拉着，下午两点。阿杰在打今天第三把。房租2000一个月，存款加上家里偶尔的红包，够花很久。\n\n抽屉里有一本新西兰护照，还有一个没拆封的信封装着澳洲国籍证书。他可以去世界上任何一个地方。他去了楼下的网吧。\n\n他爷爷当年两手空空渡过一整个大洋。阿杰带着一切渡过去，又回来了。这是自由吗？他不想这个问题。不想，就是重点——他什么都不想。屏幕亮着，时间过去。窗外广州一千四百万人都有地方要去。\n\n不是悲剧。只是很安静，很安静。",
+      "title_en": "Ending: Lying Flat",
+      "tier_en": "Hollow",
+      "verdict_en": "You had the freedom to go anywhere — and went nowhere.",
+      "text_en": "Guangzhou, a one-bedroom on the twelfth floor. Curtains drawn, two in the afternoon. Kevin is on his third game of the day. Rent's 2,000 a month; savings plus the occasional red packet from home will last a long time.\n\nIn the drawer there's a New Zealand passport and a sealed envelope holding his Australian citizenship certificate. He could go anywhere in the world. He went to the internet café downstairs.\n\nHis grandfather crossed a whole ocean with empty hands. Kevin crossed it with everything, and came back. Is this freedom? He doesn't think about it. Not thinking is the point — he thinks about nothing. The screen glows, time passes. Outside, all fourteen million people in Guangzhou have somewhere to be.\n\nNot a tragedy. Just very, very quiet."
+    },
+    {
+      "id": "ending_grey",
+      "title": "结局：灰幕",
+      "image": "kevin_ending_grey.png",
+      "bgm": "mood_cold.mp3",
+      "tier": "沉沦",
+      "verdict": "你赢了钱，输了那个还没决定成为谁的少年。",
+      "condition": {},
+      "flag_condition": {
+        "chose_grey": true
+      },
+      "text": "表哥的生意做大了。阿杰陷得比他自己想的深——从拍照片、写好评，到挂名过户、帮客户做假材料。车行的名字换了几茬，套路没变。他有钱了，公寓更好了，表哥给他弄了辆车（“公司的，你用”）。他有时开车经过华叔的餐厅，没有停。\n\n饮茶还是去的，每个周日。华叔看他的眼神和看表哥一样——不是生气，不是失望，只是老了的样子。像他见过这部电影，在更早的年代，在另一个国家。\n\n一天晚上回家，阿杰看到桌上的NZ护照。翻开证件页，16岁拍的照片看着他。照片里的人看起来像一个还没决定要成为谁的人。\n\n阿杰合上护照，放进抽屉。\n\n他24岁了，有钱，没有做过一件让自己骄傲的事。",
+      "title_en": "Ending: The Grey Curtain",
+      "tier_en": "Sunk",
+      "verdict_en": "You won the money, and lost the boy who hadn't yet decided who to be.",
+      "text_en": "His cousin's business got big. Kevin got in deeper than he ever meant to — from shooting photos and writing reviews to registering cars in his name and faking documents for clients. The yard changed names a few times; the playbook didn't. He has money now, a nicer flat; his cousin set him up with a car (“company car, you use it”). Sometimes he drives past Uncle Hua's restaurant. He doesn't stop.\n\nHe still goes to yum cha, every Sunday. Uncle Hua looks at him the way he looks at the cousin now — not angry, not disappointed, just old. Like he's seen this film before, in an earlier era, in another country.\n\nOne night home, Kevin sees his NZ passport on the table. He opens to the photo page; the 16-year-old in it looks back at him. The kid in the photo looks like someone who hasn't decided who to become.\n\nKevin closes the passport, puts it in the drawer.\n\nHe's 24, he has money, and he's never done one thing he's proud of."
+    },
+    {
+      "id": "ending_loop",
+      "title": "结局：循环",
+      "image": "kevin_ending_loop.png",
+      "bgm": "mood_drift.mp3",
+      "tier": "停滞",
+      "verdict": "人生这局游戏，你一直在加载，从未开始。",
+      "condition": {},
+      "flag_condition": {},
+      "text": "又是一个学期。阿杰还在八大挂着学籍，课去一半，作业拖到最后。饮茶照旧，打球照旧，游戏打到天亮照旧。\n\n华叔的餐厅他没怎么管，表哥的灰活他也没怎么接。哪边都没扎进去。新西兰护照在抽屉里，澳洲国籍他懒得申请。他可以去任何地方，于是哪也没去。\n\n有时候半夜关掉游戏，房间很黑，他会想起华叔说的那句话：到你这一代，什么都不用干了。当时像块石头落在胸口。现在那块石头还在，只是他习惯了它的重量。\n\n他没变好，也没变坏。日子像一局永远不结算的游戏，一直在加载，从不开始。",
+      "title_en": "Ending: The Loop",
+      "tier_en": "Stalled",
+      "verdict_en": "This game of a life — you keep it loading, never starting.",
+      "text_en": "Another semester. Kevin is still nominally enrolled at a Go8 uni, makes half his classes, drags assignments to the deadline. Yum cha as usual, basketball as usual, gaming till dawn as usual.\n\nHe never really took over Uncle Hua's restaurant, never really took on his cousin's grey work. Dug into neither. The NZ passport's in the drawer; he can't be bothered to apply for citizenship. He could go anywhere, so he went nowhere.\n\nSome nights, when he turns off the game and the room goes dark, he remembers Uncle Hua's words: by your generation, you don't have to do anything. Back then it landed like a stone in his chest. The stone is still there; he's just used to its weight.\n\nHe got no better, no worse. The days are like a game that never settles the score — always loading, never starting."
+    }
+  ]
+}
