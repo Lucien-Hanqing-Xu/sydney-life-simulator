@@ -7,11 +7,13 @@ Sydney through the eyes of four very different newcomers. Every choice shifts
 four stats — **money, visa, skill, mood** — and steers the story toward one of
 several endings, each with a verdict and a decision-tree of the path you took.
 
-![cover](assets/images/title_bg.png)
+![Title screen](docs/screenshot_title.png)
 
 ---
 
 ## The four lives
+
+![Choose your life](docs/screenshot_select.png)
 
 | | Character | Visa | In one line |
 |---|---|---|---|
